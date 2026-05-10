@@ -1,46 +1,59 @@
 var myTheme = {
+    selectors: {
+        nav: '#siteNav',
+        navToggler: '#siteNavToggler',
+        search: '#exe-client-search',
+        searchText: '#exe-client-search-text',
+        searchToggler: '#searchBarToggler',
+    },
     init: function () {
         // Common functions
         if (this.inIframe()) $('body').addClass('in-iframe');
         if (!$('body').hasClass('exe-web-site')) return;
         // Add menu and search bar togglers
+        var menuText = $exe_i18n.menu || 'Menú';
+        var searchText = $exe_i18n.search || 'Buscar';
         var togglers =
             '\
-            <button type="button" id="siteNavToggler" class="toggler" aria-controls="siteNav" aria-expanded="true" title="' +
-            $exe_i18n.menu +
+            <button type="button" id="siteNavToggler" class="toggler" aria-controls="siteNav" aria-expanded="true" aria-label="' +
+            menuText +
+            '" title="' +
+            menuText +
             '">\
                 <span class="sr-av">' +
-            $exe_i18n.menu +
+            menuText +
             '</span>\
             </button>\
-            <button type="button" id="searchBarTogger" class="toggler" aria-controls="exe-client-search" aria-expanded="false" title="' +
-            $exe_i18n.search +
+            <button type="button" id="searchBarToggler" class="toggler" aria-controls="exe-client-search" aria-expanded="false" aria-label="' +
+            searchText +
+            '" title="' +
+            searchText +
             '">\
                 <span class="sr-av">' +
-            $exe_i18n.search +
+            searchText +
             '</span>\
             </button>\
         ';
-        $('#siteNav').before(togglers);
+        $(this.selectors.nav).before(togglers);
         // Check the current NAV status
         var url = window.location.href;
         url = url.split('?');
         if (url.length > 1) {
             if (url[1].indexOf('nav=false') != -1) {
                 $('body').addClass('siteNav-off');
-                $('#siteNavToggler').attr('aria-expanded', 'false');
                 myTheme.params('add');
             }
         }
+        this.updateNavState();
+        this.updateSearchState(false);
         // Menu toggler
-        $('#siteNavToggler').on('click', function () {
+        $(this.selectors.navToggler).on('click', function () {
             if (myTheme.isLowRes()) {
-                $('#exe-client-search').hide();
-                $('#searchBarTogger').attr('aria-expanded', 'false');
+                myTheme.closeSearch();
                 if ($('body').hasClass('siteNav-off')) {
                     $('body').removeClass('siteNav-off');
                 } else {
-                    if ($('#siteNav').isInViewport()) {
+                    if ($(myTheme.selectors.nav).isInViewport()) {
                         $('body').addClass('siteNav-off');
                         myTheme.params('add');
                     }
@@ -52,22 +65,21 @@ var myTheme = {
                     $('body').hasClass('siteNav-off') ? 'add' : 'remove'
                 );
             }
-            $(this).attr('aria-expanded', $('body').hasClass('siteNav-off') ? 'false' : 'true');
+            myTheme.updateNavState();
         });
         // Search bar toggler
-        $('#searchBarTogger').on('click', function () {
-            var bar = $('#exe-client-search');
+        $(this.selectors.searchToggler).on('click', function () {
+            var bar = $(myTheme.selectors.search);
             if (bar.is(':visible')) {
-                bar.hide();
-                $(this).attr('aria-expanded', 'false');
+                myTheme.closeSearch();
             } else {
                 if (myTheme.isLowRes()) {
                     $('body').addClass('siteNav-off');
-                    $('#siteNavToggler').attr('aria-expanded', 'false');
+                    myTheme.updateNavState();
                 }
                 bar.show();
-                $(this).attr('aria-expanded', 'true');
-                $('#exe-client-search-text').focus();
+                myTheme.updateSearchState(true);
+                $(myTheme.selectors.searchText).focus();
                 window.scroll(0, 0);
             }
         });
@@ -90,10 +102,23 @@ var myTheme = {
         }
     },
     searchForm: function () {
-        $('#exe-client-search-text').attr('class', 'form-control');
+        $(this.selectors.searchText).attr('class', 'form-control');
+    },
+    closeSearch: function () {
+        $(this.selectors.search).hide();
+        this.updateSearchState(false);
+    },
+    updateNavState: function () {
+        $(this.selectors.navToggler).attr(
+            'aria-expanded',
+            $('body').hasClass('siteNav-off') ? 'false' : 'true'
+        );
+    },
+    updateSearchState: function (isOpen) {
+        $(this.selectors.searchToggler).attr('aria-expanded', isOpen ? 'true' : 'false');
     },
     isLowRes: function () {
-        return $('#siteNav').css('float') == 'none';
+        return $(this.selectors.nav).css('float') == 'none';
     },
     checkNav: function () {
         var wrapper = $('#sidebar-nav');

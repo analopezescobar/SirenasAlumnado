@@ -23,6 +23,7 @@ $exe_i18n = {
     "noSearchResults": "Sin resultados",
     "searchResults": "Resultados de búsqueda para",
     "hideResults": "Ocultar resultados",
+    "openImage": "Abrir imagen",
     "block": "bloque",
     "more": "Más",
     "newWindow": "Ventana nueva",

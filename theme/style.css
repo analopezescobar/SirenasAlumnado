@@ -1,4 +1,4 @@
-/* Default style (to review) */
+﻿/* Default style (to review) */
 
 body.exe-export {
     padding: 1em 0;
@@ -9,7 +9,7 @@ body.exe-web-site {
 }
 
 .exe-content a {
-    color: #d76b4a;
+    color: #a94b32;
 }
 
 .exe-content a:hover,
@@ -234,11 +234,11 @@ body.siteNav-off #siteFooter {
 
 #siteNav a.active {
     background: #fff;
-    color: #d76b4a;
+    color: #a94b32;
 }
 
 #siteNav a.highlighted-link {
-    color: #d76b4a;
+    color: #a94b32;
     background: #ededed;
 }
 
@@ -296,12 +296,12 @@ button.toggler {
     background-position: -120px 0;
 }
 
-button#searchBarTogger {
+button#searchBarToggler {
     background-position: -40px 0;
     display: none;
 }
 
-.exe-search-on #searchBarTogger {
+.exe-search-on #searchBarToggler {
     display: inline;
 }
 
@@ -309,7 +309,7 @@ button#siteNavToggler {
     left: 280px;
 }
 
-button#searchBarTogger {
+button#searchBarToggler {
     left: 330px;
 }
 
@@ -317,7 +317,7 @@ body.siteNav-off button#siteNavToggler {
     left: 65px;
 }
 
-body.siteNav-off button#searchBarTogger {
+body.siteNav-off button#searchBarToggler {
     left: 115px;
 }
 
@@ -327,6 +327,14 @@ button.toggler:hover,
 button.toggler:focus {
     background-color: #066d6d;
     border-color: #066d6d;
+}
+
+.exe-content a:focus-visible,
+.nav-buttons a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #054d4d;
+    outline-offset: 3px;
 }
 
 .nav-buttons .nav-button span,
@@ -519,7 +527,7 @@ button.toggler:focus {
 #packageLicense a:hover,
 #packageLicense a:focus {
     text-decoration: none;
-    color: #d76b4a;
+    color: #a94b32;
 }
 
 #packageLicense.propietary {
@@ -661,7 +669,7 @@ label[for="teacher-mode-toggler"] {
         left: 232px;
     }
 
-    button#searchBarTogger {
+    button#searchBarToggler {
         left: 282px;
     }
 
@@ -718,7 +726,7 @@ label[for="teacher-mode-toggler"] {
         left: 65px;
     }
 
-    button#searchBarTogger {
+    button#searchBarToggler {
         left: 115px;
     }
 

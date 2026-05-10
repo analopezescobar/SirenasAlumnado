@@ -45,6 +45,7 @@ window.$exeExport = {
             this.setExe();
             this.initExe();
             this.initJsonIdevices();
+            this.improveImageAccessibility();
         } catch (err) {
             console.error('Error: Failed to initialize content');
         }
@@ -61,7 +62,10 @@ window.$exeExport = {
                 console.error('Error: Failed to initialize Teacher Mode');
             }
         }, 100);
-        setTimeout(() => { this.addClassJsExecutedToExeContent() }, this.delayLoadingPageTime);
+        setTimeout(() => {
+            this.addClassJsExecutedToExeContent();
+            this.improveImageAccessibility();
+        }, this.delayLoadingPageTime);
         setTimeout(() => {
             try {
                 this.triggerPrintIfRequested();
@@ -383,8 +387,15 @@ window.$exeExport = {
             ? $exe_i18n.toggleContent
             : 'Toggle content';
         $('article.box .box-head .box-toggle').each(function() {
+            var box = $(this).parents('article.box');
+            var content = $('.box-content', box).first();
+            if (content.length && !content.attr('id')) {
+                content.attr('id', box.attr('id') + '-content');
+            }
             $(this).attr('title', toggleText);
+            $(this).attr('aria-label', toggleText);
             $(this).attr('aria-expanded', 'true');
+            if (content.length) $(this).attr('aria-controls', content.attr('id'));
             $('span', this).text(toggleText);
         });
 
@@ -408,7 +419,7 @@ window.$exeExport = {
         });
         $('article.box .box-head').has('.box-toggle').css('cursor', 'pointer').on('click', function(e){
             let t = $(e.target);
-            if (t.hasClass('box-toggle')) return false;
+            if (t.closest('.box-toggle').length) return false;
             $('.box-toggle', this).trigger('click');
         });
 
@@ -424,6 +435,50 @@ window.$exeExport = {
         translateI18nElement('next', 'Next');
         translateI18nElement('menu', 'Menu');
         $('#skipNav').text($exe_i18n.skipToContent || 'Skip to content');
+    },
+
+    /**
+     * Add useful labels to linked gallery images that were exported with empty alt text.
+     */
+    improveImageAccessibility: function () {
+        $('a.imageLink').each(function () {
+            var link = $(this);
+            var image = $('img', link).first();
+            if (!image.length) return;
+
+            var label = image.attr('alt') || image.attr('title') || link.attr('title');
+            if (!label) {
+                label = $exeExport.getReadableFileLabel(link.attr('href') || image.attr('src'));
+            }
+            if (!label) {
+                label = $exe_i18n.openImage || 'Open image';
+            }
+
+            image.attr('alt', label);
+            if (!link.attr('aria-label')) {
+                link.attr('aria-label', ($exe_i18n.openImage || 'Open image') + ': ' + label);
+            }
+        });
+    },
+
+    /**
+     * Build a readable label from a resource URL.
+     */
+    getReadableFileLabel: function (url) {
+        if (!url || url.indexOf('blob:') === 0) return '';
+        var cleanUrl = url.split('#')[0].split('?')[0];
+        var fileName = cleanUrl.split('/').pop();
+        if (!fileName) return '';
+        try {
+            fileName = decodeURIComponent(fileName);
+        } catch (e) {
+            // Keep the original file name when decoding is not possible.
+        }
+        return fileName
+            .replace(/\.[^.]+$/, '')
+            .replace(/[-_]+/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
     },
 
     /**
