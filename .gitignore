@@ -1,0 +1,11 @@
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Avoid uploading exported archives or source packages by accident
+*.zip
+*.rar
+*.7z
+*.elp
+*.elpx
