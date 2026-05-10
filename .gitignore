@@ -2,6 +2,9 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+*.tmp
+*.bak
+*.swp
 
 # Avoid uploading exported archives or source packages by accident
 *.zip
@@ -9,3 +12,7 @@ desktop.ini
 *.7z
 *.elp
 *.elpx
+
+# eXeLearning/browser export leftovers
+*.log
+*.crdownload
