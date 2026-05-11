@@ -351,7 +351,8 @@ h2 {
 .quiz-card,
 .audio-card,
 .memory-card,
-.bits-card {
+.bits-card,
+.association-card {
   display: grid;
   gap: 12px;
   padding: clamp(14px, 3vw, 22px);
@@ -595,6 +596,100 @@ h2 {
   box-shadow: none;
 }
 
+.association-status {
+  min-height: 1.6em;
+  color: var(--ink);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-weight: 900;
+}
+
+.association-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.association-target {
+  display: grid;
+  gap: 8px;
+  min-height: 188px;
+  padding: 10px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 7px 0 rgba(17, 52, 58, .12);
+}
+
+.association-target img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border: 2px solid rgba(17, 52, 58, .22);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.association-label {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  border: 3px dashed var(--aqua);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #eefafa;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.association-target.is-matched .association-label {
+  border-style: solid;
+  border-color: var(--leaf);
+  background: #bce8c5;
+}
+
+.word-tray {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 12px;
+}
+
+.word-card {
+  display: grid;
+  gap: 4px;
+  min-height: 68px;
+  padding: 10px 12px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--sun);
+  box-shadow: 0 6px 0 rgba(17, 52, 58, .18);
+  font-weight: 900;
+  line-height: 1.05;
+  cursor: grab;
+}
+
+.word-card span:first-child {
+  font-size: clamp(1.02rem, 1.8vw, 1.25rem);
+}
+
+.word-card span:last-child {
+  font-size: clamp(.95rem, 1.6vw, 1.1rem);
+}
+
+.word-card.is-selected {
+  outline: 5px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.word-card.is-used {
+  opacity: .45;
+  cursor: default;
+  box-shadow: none;
+}
+
 .create-zone {
   grid-template-columns: minmax(220px, 320px) minmax(360px, 1fr);
   align-items: center;
@@ -833,7 +928,8 @@ textarea {
   .quiz-card,
   .audio-card,
   .memory-card,
-  .bits-card {
+  .bits-card,
+  .association-card {
     padding: 12px;
   }
 
@@ -869,6 +965,19 @@ textarea {
 
   .bit-card {
     flex: 1 1 132px;
+  }
+
+  .association-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .association-target {
+    min-height: 168px;
+    padding: 8px;
+  }
+
+  .word-tray {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   textarea {

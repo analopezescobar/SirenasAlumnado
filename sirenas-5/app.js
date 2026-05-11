@@ -93,6 +93,49 @@ const activities = [
       "Tambien puedes tocar una palabra y despues tocar su hueco."
     ],
     blanks: ["acantilado", "plenilunio", "sirena", "cabellera", "delfines", "mar"]
+  },
+  {
+    id: "semana-2-palabras-imagenes",
+    kind: "association",
+    week: "Semana 2",
+    step: "Semana 2 · Día 6",
+    title: "Las palabras del mar",
+    text: "Unimos cada imagen con su tarjeta de lectura en mayusculas y minusculas.",
+    image: "assets/bits/sirena.jpg",
+    imageAlt: "Imagen de sirena de los bits de lectura",
+    resource: "../content/resources/bits SIRENAS angel gonzalez.pdf",
+    resourceText: "Abrir bits originales",
+    story: [
+      "Mira una imagen.",
+      "Busca su palabra.",
+      "Arrastra la tarjeta o tocala y despues toca la imagen."
+    ],
+    associations: [
+      { key: "triton", upper: "TRITÓN", lower: "tritón", image: "assets/bits/triton.jpg" },
+      { key: "sirena", upper: "SIRENA", lower: "sirena", image: "assets/bits/sirena.jpg" },
+      { key: "delfin", upper: "DELFÍN", lower: "delfín", image: "assets/bits/delfin.jpg" },
+      { key: "marino", upper: "MARINO", lower: "marino", image: "assets/bits/marino.jpg" },
+      { key: "marinero", upper: "MARINERO", lower: "marinero", image: "assets/bits/marinero.jpg" },
+      { key: "marinera", upper: "MARINERA", lower: "marinera", image: "assets/bits/marinera.jpg" },
+      { key: "barco", upper: "BARCO", lower: "barco", image: "assets/bits/barco.jpg" },
+      { key: "bote", upper: "BOTE", lower: "bote", image: "assets/bits/bote.jpg" },
+      { key: "velero", upper: "VELERO", lower: "velero", image: "assets/bits/velero.jpg" },
+      { key: "proa", upper: "PROA", lower: "proa", image: "assets/bits/proa.jpg" },
+      { key: "popa", upper: "POPA", lower: "popa", image: "assets/bits/popa.jpg" },
+      { key: "timon", upper: "TIMÓN", lower: "timón", image: "assets/bits/timon.jpg" },
+      { key: "caracola", upper: "CARACOLA", lower: "caracola", image: "assets/bits/caracola.jpg" },
+      { key: "estribor", upper: "ESTRIBOR", lower: "estribor", image: "assets/bits/estribor.jpg" },
+      { key: "babor", upper: "BABOR", lower: "babor", image: "assets/bits/babor.jpg" },
+      { key: "plenilunio", upper: "PLENILUNIO", lower: "plenilunio", image: "assets/bits/plenilunio.jpg" },
+      { key: "acantilado", upper: "ACANTILADO", lower: "acantilado", image: "assets/bits/acantilado.jpg" },
+      { key: "cabellera", upper: "CABELLERA", lower: "cabellera", image: "assets/bits/cabellera.jpg" },
+      { key: "sal", upper: "SAL", lower: "sal", image: "assets/bits/sal.jpg" },
+      { key: "ola", upper: "OLA", lower: "ola", image: "assets/bits/ola.jpg" },
+      { key: "mensaje", upper: "MENSAJE", lower: "mensaje", image: "assets/bits/mensaje.jpg" },
+      { key: "poema", upper: "POEMA", lower: "poema", image: "assets/bits/poema.jpg" },
+      { key: "poeta", upper: "POETA", lower: "poeta", image: "assets/bits/poeta.jpg" },
+      { key: "mar", upper: "MAR", lower: "mar", image: "assets/bits/mar.jpg" }
+    ]
   }
 ];
 
@@ -108,6 +151,8 @@ const wordDrawings = {
 };
 
 const tiles = Array.from(document.querySelectorAll("[data-open]"));
+const activityTiles = Array.from(document.querySelectorAll(".activity-tile[data-open]"));
+const weekButtons = Array.from(document.querySelectorAll("[data-week-filter]"));
 const panelImage = document.querySelector("[data-panel-image]");
 const panelStep = document.querySelector("[data-panel-step]");
 const panelTitle = document.querySelector("[data-panel-title]");
@@ -128,11 +173,16 @@ const bitsCard = document.querySelector("[data-bits-card]");
 const bitsStatus = document.querySelector("[data-bits-status]");
 const poemFill = document.querySelector("[data-poem-fill]");
 const bitsTray = document.querySelector("[data-bits-tray]");
+const associationCard = document.querySelector("[data-association-card]");
+const associationStatus = document.querySelector("[data-association-status]");
+const associationGrid = document.querySelector("[data-association-grid]");
+const wordTray = document.querySelector("[data-word-tray]");
 const createZone = document.querySelector(".create-zone");
 const resetQuizButton = document.querySelector("[data-reset-quiz]");
 const downloadSheetButton = document.querySelector("[data-download-sheet]");
 const resetMemoryButton = document.querySelector("[data-reset-memory]");
 const resetBitsButton = document.querySelector("[data-reset-bits]");
+const resetAssociationButton = document.querySelector("[data-reset-association]");
 const speakActivityButton = document.querySelector("[data-speak-activity]");
 const speakPageButton = document.querySelector("[data-speak-page]");
 const contrastButton = document.querySelector("[data-toggle-contrast]");
@@ -148,6 +198,8 @@ let flippedCards = [];
 let matchedCards = 0;
 let selectedBit = null;
 let completedBits = 0;
+let selectedWordCard = null;
+let completedAssociations = 0;
 
 function speak(text) {
   if (!("speechSynthesis" in window)) return;
@@ -443,21 +495,110 @@ function renderBits(activity) {
   });
 }
 
+function clearWordCardSelection() {
+  if (selectedWordCard) {
+    selectedWordCard.classList.remove("is-selected");
+    selectedWordCard = null;
+  }
+}
+
+function tryMatchAssociation(target, card) {
+  if (!target || !card || target.disabled || card.disabled) return;
+
+  if (target.dataset.key !== card.dataset.key) {
+    associationStatus.textContent = "Prueba con otra tarjeta.";
+    speak("Prueba con otra tarjeta.");
+    clearWordCardSelection();
+    return;
+  }
+
+  const label = target.querySelector(".association-label");
+  label.textContent = `${card.dataset.upper} / ${card.dataset.lower}`;
+  target.classList.add("is-matched");
+  target.disabled = true;
+  card.disabled = true;
+  card.classList.remove("is-selected");
+  card.classList.add("is-used");
+  completedAssociations += 1;
+  selectedWordCard = null;
+  playChimeSound();
+  speak(card.dataset.lower);
+
+  if (completedAssociations === associationGrid.children.length) {
+    associationStatus.textContent = "Muy bien. Has unido todas las palabras.";
+    speak("Muy bien. Has unido todas las palabras.");
+  } else {
+    associationStatus.textContent = "Muy bien. Sigue buscando parejas.";
+  }
+}
+
+function renderAssociation(activity) {
+  completedAssociations = 0;
+  selectedWordCard = null;
+  associationGrid.replaceChildren();
+  wordTray.replaceChildren();
+  associationStatus.textContent = "Arrastra una palabra a su imagen.";
+
+  shuffle(activity.associations).forEach((item) => {
+    const target = document.createElement("button");
+    target.className = "association-target";
+    target.type = "button";
+    target.dataset.key = item.key;
+    target.setAttribute("aria-label", `Imagen de ${item.lower}`);
+    target.innerHTML = `<img src="${item.image}" alt=""><span class="association-label"></span>`;
+    target.addEventListener("dragover", (event) => event.preventDefault());
+    target.addEventListener("drop", (event) => {
+      event.preventDefault();
+      const key = event.dataTransfer.getData("text/plain");
+      const card = wordTray.querySelector(`[data-key="${key}"]`);
+      tryMatchAssociation(target, card);
+    });
+    target.addEventListener("click", () => tryMatchAssociation(target, selectedWordCard));
+    associationGrid.appendChild(target);
+  });
+
+  shuffle(activity.associations).forEach((item) => {
+    const card = document.createElement("button");
+    card.className = "word-card";
+    card.type = "button";
+    card.draggable = true;
+    card.dataset.key = item.key;
+    card.dataset.upper = item.upper;
+    card.dataset.lower = item.lower;
+    card.innerHTML = `<span>${item.upper}</span><span>${item.lower}</span>`;
+    card.addEventListener("dragstart", (event) => {
+      event.dataTransfer.setData("text/plain", item.key);
+    });
+    card.addEventListener("click", () => {
+      if (card.disabled) return;
+      clearWordCardSelection();
+      selectedWordCard = card;
+      card.classList.add("is-selected");
+      associationStatus.textContent = `Ahora toca la imagen de ${item.lower}.`;
+      speak(item.lower);
+    });
+    wordTray.appendChild(card);
+  });
+}
+
 function setMode(activity) {
   const isQuiz = activity.kind === "quiz";
   const isWorksheet = activity.kind === "worksheet";
   const isMemory = activity.kind === "memory";
   const isBits = activity.kind === "bits";
+  const isAssociation = activity.kind === "association";
   quizCard.hidden = !isQuiz;
   worksheetCard.hidden = !isWorksheet;
   audioCard.hidden = !isMemory;
   memoryCard.hidden = !isMemory;
   bitsCard.hidden = !isBits;
+  associationCard.hidden = !isAssociation;
   createZone.hidden = !isQuiz;
   resetQuizButton.hidden = !isQuiz;
   downloadSheetButton.hidden = !isWorksheet;
   resetMemoryButton.hidden = !isMemory;
   resetBitsButton.hidden = !isBits;
+  resetAssociationButton.hidden = !isAssociation;
 
   if (isQuiz) {
     renderQuiz(activity);
@@ -468,6 +609,10 @@ function setMode(activity) {
     quizFeedback.textContent = "";
   } else if (isBits) {
     renderBits(activity);
+    answerGrid.replaceChildren();
+    quizFeedback.textContent = "";
+  } else if (isAssociation) {
+    renderAssociation(activity);
     answerGrid.replaceChildren();
     quizFeedback.textContent = "";
   } else {
@@ -491,6 +636,8 @@ function openActivity(id, shouldSpeak = false) {
   resourceLink.textContent = activity.resourceText;
   renderStory(activity);
   setMode(activity);
+  const openedTile = activityTiles.find((tile) => tile.dataset.open === id);
+  if (openedTile) setWeekFilter(openedTile.dataset.week);
 
   tiles.forEach((tile) => {
     tile.classList.toggle("is-active", tile.dataset.open === id);
@@ -499,6 +646,20 @@ function openActivity(id, shouldSpeak = false) {
   if (shouldSpeak) {
     speak(activitySpeech(activity));
   }
+}
+
+function setWeekFilter(week, openFirst = false) {
+  activityTiles.forEach((tile) => {
+    tile.hidden = tile.dataset.week !== week;
+  });
+
+  weekButtons.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.weekFilter === week);
+  });
+
+  if (!openFirst) return;
+  const firstTile = activityTiles.find((tile) => tile.dataset.week === week);
+  if (firstTile) openActivity(firstTile.dataset.open, true);
 }
 
 function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
@@ -594,6 +755,10 @@ tiles.forEach((tile) => {
   tile.addEventListener("click", () => openActivity(tile.dataset.open, true));
 });
 
+weekButtons.forEach((button) => {
+  button.addEventListener("click", () => setWeekFilter(button.dataset.weekFilter, true));
+});
+
 resetQuizButton.addEventListener("click", () => {
   resetQuiz();
   speak(activities[currentIndex].quiz.question);
@@ -609,6 +774,11 @@ resetMemoryButton.addEventListener("click", () => {
 resetBitsButton.addEventListener("click", () => {
   const activity = activities[currentIndex];
   if (activity.kind === "bits") renderBits(activity);
+});
+
+resetAssociationButton.addEventListener("click", () => {
+  const activity = activities[currentIndex];
+  if (activity.kind === "association") renderAssociation(activity);
 });
 
 speakActivityButton.addEventListener("click", () => {
@@ -627,3 +797,4 @@ contrastButton.addEventListener("click", () => {
 });
 
 openActivity("semana-1-carta-coco");
+setWeekFilter("1");
