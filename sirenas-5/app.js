@@ -182,7 +182,6 @@ const bitsTray = document.querySelector("[data-bits-tray]");
 const associationCard = document.querySelector("[data-association-card]");
 const associationStatus = document.querySelector("[data-association-status]");
 const associationGrid = document.querySelector("[data-association-grid]");
-const wordTray = document.querySelector("[data-word-tray]");
 const createZone = document.querySelector(".create-zone");
 const resetQuizButton = document.querySelector("[data-reset-quiz]");
 const downloadSheetButton = document.querySelector("[data-download-sheet]");
@@ -530,7 +529,7 @@ function tryMatchAssociation(target, card) {
   playChimeSound();
   speak(card.dataset.lower);
 
-  if (completedAssociations === associationGrid.children.length) {
+  if (completedAssociations === associationGrid.querySelectorAll(".association-target").length) {
     associationStatus.textContent = "Muy bien. Has unido todas las palabras.";
     speak("Muy bien. Has unido todas las palabras.");
   } else {
@@ -542,48 +541,61 @@ function renderAssociation(activity) {
   completedAssociations = 0;
   selectedWordCard = null;
   associationGrid.replaceChildren();
-  wordTray.replaceChildren();
   associationStatus.textContent = "Arrastra una palabra a su imagen.";
 
-  shuffle(activity.associations).forEach((item) => {
-    const target = document.createElement("button");
-    target.className = "association-target";
-    target.type = "button";
-    target.dataset.key = item.key;
-    target.setAttribute("aria-label", `Imagen de ${item.lower}`);
-    target.innerHTML = `<img src="${item.image}" alt=""><span class="association-label"></span>`;
-    target.addEventListener("dragover", (event) => event.preventDefault());
-    target.addEventListener("drop", (event) => {
-      event.preventDefault();
-      const key = event.dataTransfer.getData("text/plain");
-      const card = wordTray.querySelector(`[data-key="${key}"]`);
-      tryMatchAssociation(target, card);
-    });
-    target.addEventListener("click", () => tryMatchAssociation(target, selectedWordCard));
-    associationGrid.appendChild(target);
-  });
+  activity.associationGroups.forEach((group, index) => {
+    const section = document.createElement("section");
+    section.className = "association-group";
+    section.setAttribute("aria-label", `Grupo ${index + 1}`);
 
-  shuffle(activity.associations).forEach((item) => {
-    const card = document.createElement("button");
-    card.className = "word-card";
-    card.type = "button";
-    card.draggable = true;
-    card.dataset.key = item.key;
-    card.dataset.upper = item.upper;
-    card.dataset.lower = item.lower;
-    card.innerHTML = `<span>${item.upper}</span><span>${item.lower}</span>`;
-    card.addEventListener("dragstart", (event) => {
-      event.dataTransfer.setData("text/plain", item.key);
+    const images = document.createElement("div");
+    images.className = "association-images";
+    group.forEach((item) => {
+      const target = document.createElement("button");
+      target.className = "association-target";
+      target.type = "button";
+      target.dataset.key = item.key;
+      target.setAttribute("aria-label", `Imagen de ${item.lower}`);
+      target.innerHTML = `<img src="${item.image}" alt=""><span class="association-label"></span>`;
+      target.addEventListener("dragover", (event) => event.preventDefault());
+      target.addEventListener("drop", (event) => {
+        event.preventDefault();
+        const key = event.dataTransfer.getData("text/plain");
+        const card = section.querySelector(`[data-key="${key}"]`);
+        tryMatchAssociation(target, card);
+      });
+      target.addEventListener("click", () => tryMatchAssociation(target, selectedWordCard));
+      images.appendChild(target);
     });
-    card.addEventListener("click", () => {
-      if (card.disabled) return;
-      clearWordCardSelection();
-      selectedWordCard = card;
-      card.classList.add("is-selected");
-      associationStatus.textContent = `Ahora toca la imagen de ${item.lower}.`;
-      speak(item.lower);
+
+    const tray = document.createElement("div");
+    tray.className = "word-tray";
+    shuffle(group).forEach((item) => {
+      const card = document.createElement("button");
+      card.className = "word-card";
+      card.type = "button";
+      card.draggable = true;
+      card.dataset.key = item.key;
+      card.dataset.upper = item.upper;
+      card.dataset.lower = item.lower;
+      card.innerHTML = `<span>${item.upper}</span><span>${item.lower}</span>`;
+      card.addEventListener("dragstart", (event) => {
+        event.dataTransfer.setData("text/plain", item.key);
+      });
+      card.addEventListener("click", () => {
+        if (card.disabled) return;
+        clearWordCardSelection();
+        selectedWordCard = card;
+        card.classList.add("is-selected");
+        associationStatus.textContent = `Ahora toca la imagen de ${item.lower}.`;
+        speak(item.lower);
+      });
+      tray.appendChild(card);
     });
-    wordTray.appendChild(card);
+
+    section.appendChild(images);
+    section.appendChild(tray);
+    associationGrid.appendChild(section);
   });
 }
 

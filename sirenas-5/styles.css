@@ -605,7 +605,21 @@ h2 {
 
 .association-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+.association-group {
+  display: grid;
+  gap: 12px;
+  padding: clamp(12px, 2vw, 18px);
+  border: 3px solid rgba(17, 52, 58, .18);
+  border-radius: 8px;
+  background: #eefafa;
+}
+
+.association-images {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -652,7 +666,7 @@ h2 {
 
 .word-tray {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -967,17 +981,26 @@ textarea {
     flex: 1 1 132px;
   }
 
-  .association-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .association-target {
-    min-height: 168px;
+    min-height: 142px;
     padding: 8px;
   }
 
   .word-tray {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .word-card {
+    padding: 8px 6px;
+  }
+
+  .word-card span:first-child {
+    font-size: .86rem;
+  }
+
+  .word-card span:last-child {
+    font-size: .8rem;
   }
 
   textarea {
