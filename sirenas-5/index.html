@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sirenas 5 anos</title>
+  <meta name="description" content="Version visual e interactiva del proyecto Sirenas para alumnado de 5 anos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="../content/resources/thumbs/SIRENAS-IMAGEN-1.jpg" alt="" aria-hidden="true" decoding="async">
+      <span>SIRENAS</span>
+    </a>
+    <nav class="top-actions" aria-label="Acciones principales">
+      <button class="icon-button" type="button" data-speak-page aria-label="Escuchar la pantalla">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm13.5 3a4.5 4.5 0 0 0-2-3.74v7.48a4.5 4.5 0 0 0 2-3.74Z"/></svg>
+      </button>
+      <button class="icon-button" type="button" data-toggle-contrast aria-label="Cambiar contraste">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18V3Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="stage" aria-labelledby="main-title">
+      <div class="stage-copy">
+        <p class="kicker">Semana 1</p>
+        <h1 id="main-title">Conocemos a Coco</h1>
+        <p class="lead" data-readable>Leemos una carta, escuchamos a Coco y elegimos la respuesta correcta.</p>
+        <div class="choice-row" aria-label="Elegir actividad">
+          <button class="primary-action" type="button" data-open="semana-1-carta-coco">Empezar</button>
+          <a class="secondary-action" href="../index.html">Proyecto completo</a>
+        </div>
+      </div>
+      <div class="stage-art" aria-label="Imagen del proyecto Sirenas">
+        <img src="../content/resources/SIRENAS IMAGEN 1.jpg" alt="Ilustracion marina del proyecto Sirenas" decoding="async">
+      </div>
+    </section>
+
+    <section class="week-strip" aria-label="Semanas del proyecto">
+      <button class="week-pill is-active" type="button">Semana 1</button>
+      <button class="week-pill" type="button" disabled>Semana 2</button>
+      <button class="week-pill" type="button" disabled>Semana 3</button>
+    </section>
+
+    <section class="activity-grid" aria-label="Actividades de la semana 1">
+      <button class="activity-tile is-active" type="button" data-open="semana-1-carta-coco">
+        <img src="../content/resources/tortuga coco.jpg" alt="" loading="lazy" decoding="async">
+        <span>Carta de Coco</span>
+      </button>
+      <button class="activity-tile" type="button" data-open="semana-1-que-sabemos">
+        <img src="../content/resources/thumbs/que-sabemos-de-sirenas.jpg" alt="" loading="lazy" decoding="async">
+        <span>¿Qué sabemos?</span>
+      </button>
+      <button class="activity-tile" type="button" data-open="semana-1-poema-rimas">
+        <img src="../content/resources/thumbs/lectura-poema.jpg" alt="" loading="lazy" decoding="async">
+        <span>Poema y rimas</span>
+      </button>
+      <button class="activity-tile" type="button" data-open="semana-1-bits-lectura">
+        <img src="../content/resources/thumbs/panel-de-palabras-del-mar.jpg" alt="" loading="lazy" decoding="async">
+        <span>Bits de lectura</span>
+      </button>
+    </section>
+
+    <section class="activity-panel" aria-live="polite">
+      <div class="panel-media">
+        <img data-panel-image src="../content/resources/tortuga coco.jpg" alt="Tortuga Coco, personaje guia del proyecto" loading="lazy" decoding="async">
+      </div>
+      <div class="panel-content">
+        <p class="panel-step" data-panel-step>Semana 1 · Actividad 1</p>
+        <h2 data-panel-title>Leemos la carta de Coco</h2>
+        <p data-panel-text data-readable>Coco nos pide ayuda para resolver enigmas y misterios de sus amigas las sirenas.</p>
+        <a class="resource-link" data-resource-link href="../content/resources/COCO CARTA PRESENTACIÓN.pdf" target="_blank" rel="noopener">Abrir carta original</a>
+        <div class="story-card" data-story-text></div>
+        <div class="quiz-card" data-quiz-card>
+          <p class="quiz-question" data-quiz-question>¿Por qué Coco necesita nuestra ayuda?</p>
+          <div class="answer-grid" data-answer-grid></div>
+          <p class="quiz-feedback" data-quiz-feedback aria-live="polite"></p>
+        </div>
+        <div class="worksheet-card" data-worksheet-card hidden>
+          <div class="worksheet-sheet" data-worksheet-sheet>
+            <img src="../content/resources/que sabemos de sirenas.png" alt="Ficha que sabemos sobre las sirenas" loading="lazy" decoding="async">
+            <label class="worksheet-field field-known">
+              <span>¿Qué sabemos?</span>
+              <textarea data-sheet-field="known" maxlength="170" aria-label="Escribir que sabemos sobre las sirenas"></textarea>
+            </label>
+            <label class="worksheet-field field-want">
+              <span>¿Qué queremos saber?</span>
+              <textarea data-sheet-field="want" maxlength="170" aria-label="Escribir que queremos saber sobre las sirenas"></textarea>
+            </label>
+            <label class="worksheet-field field-how">
+              <span>¿Cómo podemos aprenderlo?</span>
+              <textarea data-sheet-field="how" maxlength="170" aria-label="Escribir como podemos aprenderlo"></textarea>
+            </label>
+          </div>
+        </div>
+        <div class="audio-card" data-audio-card hidden>
+          <p class="quiz-question">Escuchamos el poema</p>
+          <audio data-poem-audio controls preload="metadata">
+            <source src="../content/resources/poesia-5-anos-a-ana.mp3" type="audio/mpeg">
+            Tu navegador no puede reproducir este audio.
+          </audio>
+        </div>
+        <div class="memory-card" data-memory-card hidden>
+          <p class="quiz-question">Une las palabras que riman</p>
+          <div class="memory-status" data-memory-status aria-live="polite">Busca una pareja.</div>
+          <div class="memory-grid" data-memory-grid></div>
+        </div>
+        <div class="bits-card" data-bits-card hidden>
+          <p class="quiz-question">Completa los versos</p>
+          <div class="bits-status" data-bits-status aria-live="polite">Arrastra una palabra a su hueco.</div>
+          <div class="poem-fill" data-poem-fill></div>
+          <div class="bits-tray" data-bits-tray aria-label="Palabras para completar"></div>
+        </div>
+        <div class="panel-actions">
+          <button class="primary-action" type="button" data-speak-activity>Escuchar</button>
+          <button class="secondary-action" type="button" data-reset-quiz>Repetir pregunta</button>
+          <button class="secondary-action" type="button" data-download-sheet hidden>Descargar ficha</button>
+          <button class="secondary-action" type="button" data-reset-memory hidden>Reiniciar juego</button>
+          <button class="secondary-action" type="button" data-reset-bits hidden>Reiniciar bits</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="create-zone" aria-labelledby="create-title">
+      <div>
+        <p class="kicker">Despues de leer</p>
+        <h2 id="create-title">Ayudamos a Coco</h2>
+      </div>
+      <label class="draw-label" for="idea">Mi idea</label>
+      <textarea id="idea" rows="4" maxlength="120" placeholder="Escribo una idea para ayudar a Coco..."></textarea>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <span>Version visual para Infantil 5 anos</span>
+    <a href="../html/licencia-atribucion-y-descarga-del-proyecto.html">Licencia</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
