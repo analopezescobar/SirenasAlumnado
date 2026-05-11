@@ -101,7 +101,7 @@ const activities = [
     step: "Semana 2 · Día 6",
     title: "Las palabras del mar",
     text: "Unimos cada imagen con su tarjeta de lectura en mayusculas y minusculas.",
-    image: "assets/bits/sirena.jpg",
+    image: "assets/bits-cut/sirena.jpg",
     imageAlt: "Imagen de sirena de los bits de lectura",
     resource: "../content/resources/bits SIRENAS angel gonzalez.pdf",
     resourceText: "Abrir bits originales",
@@ -110,31 +110,37 @@ const activities = [
       "Busca su palabra.",
       "Arrastra la tarjeta o tocala y despues toca la imagen."
     ],
-    associations: [
-      { key: "triton", upper: "TRITÓN", lower: "tritón", image: "assets/bits/triton.jpg" },
-      { key: "sirena", upper: "SIRENA", lower: "sirena", image: "assets/bits/sirena.jpg" },
-      { key: "delfin", upper: "DELFÍN", lower: "delfín", image: "assets/bits/delfin.jpg" },
-      { key: "marino", upper: "MARINO", lower: "marino", image: "assets/bits/marino.jpg" },
-      { key: "marinero", upper: "MARINERO", lower: "marinero", image: "assets/bits/marinero.jpg" },
-      { key: "marinera", upper: "MARINERA", lower: "marinera", image: "assets/bits/marinera.jpg" },
-      { key: "barco", upper: "BARCO", lower: "barco", image: "assets/bits/barco.jpg" },
-      { key: "bote", upper: "BOTE", lower: "bote", image: "assets/bits/bote.jpg" },
-      { key: "velero", upper: "VELERO", lower: "velero", image: "assets/bits/velero.jpg" },
-      { key: "proa", upper: "PROA", lower: "proa", image: "assets/bits/proa.jpg" },
-      { key: "popa", upper: "POPA", lower: "popa", image: "assets/bits/popa.jpg" },
-      { key: "timon", upper: "TIMÓN", lower: "timón", image: "assets/bits/timon.jpg" },
-      { key: "caracola", upper: "CARACOLA", lower: "caracola", image: "assets/bits/caracola.jpg" },
-      { key: "estribor", upper: "ESTRIBOR", lower: "estribor", image: "assets/bits/estribor.jpg" },
-      { key: "babor", upper: "BABOR", lower: "babor", image: "assets/bits/babor.jpg" },
-      { key: "plenilunio", upper: "PLENILUNIO", lower: "plenilunio", image: "assets/bits/plenilunio.jpg" },
-      { key: "acantilado", upper: "ACANTILADO", lower: "acantilado", image: "assets/bits/acantilado.jpg" },
-      { key: "cabellera", upper: "CABELLERA", lower: "cabellera", image: "assets/bits/cabellera.jpg" },
-      { key: "sal", upper: "SAL", lower: "sal", image: "assets/bits/sal.jpg" },
-      { key: "ola", upper: "OLA", lower: "ola", image: "assets/bits/ola.jpg" },
-      { key: "mensaje", upper: "MENSAJE", lower: "mensaje", image: "assets/bits/mensaje.jpg" },
-      { key: "poema", upper: "POEMA", lower: "poema", image: "assets/bits/poema.jpg" },
-      { key: "poeta", upper: "POETA", lower: "poeta", image: "assets/bits/poeta.jpg" },
-      { key: "mar", upper: "MAR", lower: "mar", image: "assets/bits/mar.jpg" }
+    associationGroups: [
+      [
+        { key: "acantilado", upper: "ACANTILADO", lower: "acantilado", image: "assets/bits-cut/acantilado.jpg" },
+        { key: "barco", upper: "BARCO", lower: "barco", image: "assets/bits-cut/barco.jpg" },
+        { key: "cabellera", upper: "CABELLERA", lower: "cabellera", image: "assets/bits-cut/cabellera.jpg" }
+      ],
+      [
+        { key: "caracola", upper: "CARACOLA", lower: "caracola", image: "assets/bits-cut/caracola.jpg" },
+        { key: "delfin", upper: "DELFÍN", lower: "delfín", image: "assets/bits-cut/delfin.jpg" },
+        { key: "mar", upper: "MAR", lower: "mar", image: "assets/bits-cut/mar.jpg" }
+      ],
+      [
+        { key: "marinera", upper: "MARINERA", lower: "marinera", image: "assets/bits-cut/marinera.jpg" },
+        { key: "marinero", upper: "MARINERO", lower: "marinero", image: "assets/bits-cut/marinero.jpg" },
+        { key: "mensaje", upper: "MENSAJE", lower: "mensaje", image: "assets/bits-cut/mensaje.jpg" }
+      ],
+      [
+        { key: "ola", upper: "OLA", lower: "ola", image: "assets/bits-cut/ola.jpg" },
+        { key: "plenilunio", upper: "PLENILUNIO", lower: "plenilunio", image: "assets/bits-cut/plenilunio.jpg" },
+        { key: "poema", upper: "POEMA", lower: "poema", image: "assets/bits-cut/poema.jpg" }
+      ],
+      [
+        { key: "poeta", upper: "POETA", lower: "poeta", image: "assets/bits-cut/poeta.jpg" },
+        { key: "sal", upper: "SAL", lower: "sal", image: "assets/bits-cut/sal.jpg" },
+        { key: "sirena", upper: "SIRENA", lower: "sirena", image: "assets/bits-cut/sirena.jpg" }
+      ],
+      [
+        { key: "timon", upper: "TIMÓN", lower: "timón", image: "assets/bits-cut/timon.jpg" },
+        { key: "triton", upper: "TRITÓN", lower: "tritón", image: "assets/bits-cut/triton.jpg" },
+        { key: "velero", upper: "VELERO", lower: "velero", image: "assets/bits-cut/velero.jpg" }
+      ]
     ]
   }
 ];
