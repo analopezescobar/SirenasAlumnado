@@ -117,8 +117,6 @@ window.__ELPX_MANIFEST__={
     "libs/jquery/jquery.min.js",
     "libs/bootstrap/bootstrap.bundle.min.js",
     "libs/bootstrap/bootstrap.min.css",
-    "libs/bootstrap/bootstrap.bundle.min.js.map",
-    "libs/bootstrap/bootstrap.min.css.map",
     "libs/common.js",
     "libs/common_i18n.js",
     "libs/exe_export.js",

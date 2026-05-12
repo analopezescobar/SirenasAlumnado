@@ -25,4 +25,4 @@ Abrir `sirenas-5/index.html` en el navegador. No necesita servidor ni instalacio
 
 ## Mantenimiento
 
-Este proyecto usa recursos de `../content/resources/`, `../content/resources/thumbs/`, `sirenas-5/assets/bits/` y `sirenas-5/assets/bits-cut/`. Si se mueve de carpeta, hay que actualizar esas rutas relativas.
+Este proyecto usa recursos de `../content/resources/`, `../content/resources/thumbs/` y `sirenas-5/assets/bits-cut/`. Si se mueve de carpeta, hay que actualizar esas rutas relativas.
