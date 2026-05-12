@@ -41,10 +41,13 @@
       </div>
     </section>
 
-    <section class="week-strip" aria-label="Semanas del proyecto">
-      <button class="week-pill is-active" type="button" data-week-filter="1">Semana 1</button>
-      <button class="week-pill" type="button" data-week-filter="2">Semana 2</button>
-      <button class="week-pill" type="button" data-week-filter="3">Semana 3</button>
+    <section class="progress-strip" aria-label="Seguimiento de actividades de la sesion">
+      <div class="session-stars" data-session-stars></div>
+      <div class="week-strip" aria-label="Semanas del proyecto">
+        <button class="week-pill is-active" type="button" data-week-filter="1">Semana 1</button>
+        <button class="week-pill" type="button" data-week-filter="2">Semana 2</button>
+        <button class="week-pill" type="button" data-week-filter="3">Semana 3</button>
+      </div>
     </section>
 
     <section class="activity-grid" aria-label="Actividades del proyecto">
@@ -88,6 +91,14 @@
         <img src="assets/ui/angel-gonzalez.jpg" alt="" loading="lazy" decoding="async">
         <span>Linea del tiempo</span>
       </button>
+      <button class="activity-tile" type="button" data-week="3" data-open="semana-3-reto-poema-completo" onclick="openActivity('semana-3-reto-poema-completo', true)" hidden>
+        <img src="../content/resources/thumbs/lectura-poema.jpg" alt="" loading="lazy" decoding="async">
+        <span>Reto cooperativo</span>
+      </button>
+      <button class="activity-tile" type="button" data-week="3" data-open="semana-3-cierre-proyecto" onclick="openActivity('semana-3-cierre-proyecto', true)" hidden>
+        <img src="../content/resources/que hemos aprendido.png" alt="" loading="lazy" decoding="async">
+        <span>Cierre del proyecto</span>
+      </button>
     </section>
 
     <section class="activity-panel" aria-live="polite">
@@ -107,11 +118,13 @@
         </div>
         <div class="worksheet-card" data-worksheet-card hidden>
           <div class="worksheet-sheet" data-worksheet-sheet>
-            <img src="../content/resources/que sabemos de sirenas.png" alt="Ficha que sabemos sobre las sirenas" loading="lazy" decoding="async">
+            <img data-worksheet-image src="../content/resources/que sabemos de sirenas.png" alt="Ficha que sabemos sobre las sirenas" loading="lazy" decoding="async">
+            <div data-worksheet-fields>
             <label class="worksheet-field field-known">
               <span>¿Qué sabemos?</span>
               <textarea data-sheet-field="known" maxlength="170" aria-label="Escribir que sabemos sobre las sirenas"></textarea>
             </label>
+            </div>
             <label class="worksheet-field field-want">
               <span>¿Qué queremos saber?</span>
               <textarea data-sheet-field="want" maxlength="170" aria-label="Escribir que queremos saber sobre las sirenas"></textarea>
@@ -172,6 +185,10 @@
         <div class="crossword-card" data-crossword-card hidden>
           <p class="quiz-question">Completa el crucigrama</p>
           <div class="crossword-status" data-crossword-status aria-live="polite">Toca una letra y despues una casilla blanca.</div>
+          <div class="crossword-tools">
+            <button class="secondary-action" type="button" data-speak-crossword-words>Escuchar palabras</button>
+            <button class="secondary-action" type="button" data-toggle-crossword-hints>Mostrar siluetas</button>
+          </div>
           <div class="crossword-board" data-crossword-board aria-label="Crucigrama con las palabras barco velero y popa"></div>
           <div class="letter-tray" data-letter-tray aria-label="Letras para completar el crucigrama"></div>
         </div>

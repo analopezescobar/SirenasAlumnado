@@ -51,7 +51,17 @@ const activities = [
       "Primero pensamos juntos.",
       "Despues escribimos en los tres huecos de la ficha.",
       "Al final podemos descargar una imagen con nuestras respuestas."
-    ]
+    ],
+    worksheet: {
+      image: "../content/resources/que sabemos de sirenas.png",
+      imageAlt: "Ficha que sabemos sobre las sirenas",
+      downloadName: "que-sabemos-sirenas.png",
+      fields: [
+        { key: "known", label: "¿Qué sabemos?", aria: "Escribir que sabemos sobre las sirenas", maxLength: 170, box: { left: 4.5, top: 40, width: 27.5, height: 43 }, canvas: { x: 70, y: 450, width: 405 } },
+        { key: "want", label: "¿Qué queremos saber?", aria: "Escribir que queremos saber sobre las sirenas", maxLength: 170, box: { left: 35.7, top: 40, width: 26.7, height: 43 }, canvas: { x: 560, y: 450, width: 390 } },
+        { key: "how", label: "¿Cómo podemos aprenderlo?", aria: "Escribir como podemos aprenderlo", maxLength: 170, box: { left: 67.2, top: 40, width: 28.2, height: 35 }, canvas: { x: 1035, y: 450, width: 410 } }
+      ]
+    }
   },
   {
     id: "semana-1-poema-rimas",
@@ -315,6 +325,117 @@ const activities = [
       { year: "1985", text: "Premio Príncipe de Asturias de las Letras" },
       { year: "2011", text: "Escribe el poema de Sirenas" }
     ]
+  },
+  {
+    id: "semana-3-reto-poema-completo",
+    kind: "bits",
+    week: "Semana 3",
+    step: "Semana 3 · Día 13",
+    title: "Reto cooperativo: completamos el poema",
+    text: "Trabajamos en equipo para completar el poema Sirenas con sus palabras importantes.",
+    image: "../content/resources/thumbs/lectura-poema.jpg",
+    imageAlt: "Ficha de lectura del poema Sirenas",
+    resource: "../content/resources/bits SIRENAS angel gonzalez.pdf",
+    resourceText: "Abrir bits originales",
+    story: [
+      "Leemos el poema completo.",
+      "Buscamos entre todos la palabra que falta.",
+      "Elegimos la palabra correcta en cada desplegable."
+    ],
+    completionMode: "select",
+    poemLines: [
+      ["En un ", { blank: "acantilado" }, " solitario,"],
+      ["una noche de ", { blank: "junio" }, ","],
+      ["a la luz difusa del ", { blank: "plenilunio" }, ","],
+      ["presencié un episodio extraordinario."],
+      ["A mi vera,"],
+      ["dos ", { blank: "sirena" }, "s de cuerpo adolescente"],
+      ["y larga cabellera"],
+      ["surgieron de las aguas de repente"],
+      ["y empezaron a hablar de esta manera."],
+      ["- ", { blank: "ola" }, ", ", { blank: "ola" }, ", ", { blank: "ola" }, ", ", { blank: "ola" }, "."],
+      ["- ¿Qué ", { blank: "ola" }, " tienes tú?"],
+      ["- Tres ", { blank: "delfines" }, " y mero."],
+      ["- Vas atrasada un barbo y siete ostras."],
+      ["- ¿Tienes ", { blank: "alga" }, " que hacer?"],
+      ["- No tengo ", { blank: "nalga" }, " pero traigo ", { blank: "cola" }, "."],
+      ["- Podríamos acercarnos"],
+      ["de aquel ", { blank: "barco" }, " ", { blank: "velero" }, " hasta la ", { blank: "popa" }],
+      ["y cantar a dos voces las canciones"],
+      ["que a las tripulaciones vuelven locas."],
+      ["- Es divertido ver a los marinos"],
+      ["arrojándose al agua por la borda,"],
+      ["pero ahora estoy citada"],
+      ["con un tritón barbado que me ronda."],
+      ["- Entonces, nada, nada, nada."],
+      ["Volveré a verte dentro de una ", { blank: "ola" }, "."],
+      ["- Si no voy,"],
+      ["te dejaré un mensaje en una ", { blank: "caracola" }, "."],
+      ["- ¿Y qué más?"],
+      ["- Solo ", { blank: "sal" }, "."],
+      ["- Y tú ", { blank: "sal" }, " sola."],
+      ["- ", { blank: "ola" }, ", ", { blank: "ola" }, " y adiós."],
+      ["- Adiós y ", { blank: "ola" }, ", ", { blank: "ola" }, ", ", { blank: "ola" }, "."],
+      ["Así se despidieron, y nadando"],
+      ["no sé hacia qué marítimos confines,"],
+      ["se fueron las sirenas alejando"],
+      ["escoltadas por ágiles delfines."],
+      ["Yo me quedé pensando:"],
+      ["si les hubiese dado por cantar"],
+      ["habría tenido que tirarme al ", { blank: "mar" }, "."],
+      [{ blank: "Ángel" }, " ", { blank: "González" }]
+    ],
+    blanks: [
+      "acantilado", "junio", "plenilunio", "sirena",
+      "ola", "ola", "ola", "ola", "ola", "ola", "ola", "ola", "ola", "ola", "ola",
+      "alga", "nalga", "cola", "sal", "sal", "barco", "velero", "popa", "caracola",
+      "delfines", "mar", "Ángel", "González"
+    ],
+    choices: {
+      acantilado: ["acantilado", "barco", "caracola"],
+      junio: ["junio", "mar", "sal"],
+      plenilunio: ["plenilunio", "velero", "delfines"],
+      sirena: ["sirena", "caracola", "barco"],
+      ola: ["ola", "alga", "cola"],
+      delfines: ["delfines", "velero", "popa"],
+      alga: ["alga", "ola", "nalga"],
+      nalga: ["nalga", "alga", "sal"],
+      cola: ["cola", "ola", "popa"],
+      barco: ["barco", "delfines", "mar"],
+      velero: ["velero", "plenilunio", "caracola"],
+      popa: ["popa", "cola", "sal"],
+      caracola: ["caracola", "sirena", "barco"],
+      sal: ["sal", "mar", "ola"],
+      mar: ["mar", "junio", "alga"],
+      Ángel: ["Ángel", "Velero", "Delfines"],
+      González: ["González", "Acantilado", "Caracola"]
+    }
+  },
+  {
+    id: "semana-3-cierre-proyecto",
+    kind: "worksheet",
+    week: "Semana 3",
+    step: "Semana 3 · Día 14",
+    title: "Cierre del proyecto",
+    text: "Escribimos o dibujamos qué hemos aprendido y qué nos ha gustado más del proyecto Sirenas.",
+    image: "../content/resources/que hemos aprendido.png",
+    imageAlt: "Ficha de cierre que hemos aprendido del proyecto Sirenas",
+    resource: "../content/resources/que hemos aprendido.png",
+    resourceText: "Abrir ficha original",
+    story: [
+      "Recordamos todo lo trabajado en el proyecto.",
+      "Escribimos o dibujamos lo que hemos aprendido.",
+      "Compartimos lo que más nos ha gustado."
+    ],
+    worksheet: {
+      image: "../content/resources/que hemos aprendido.png",
+      imageAlt: "Ficha de cierre del proyecto Sirenas",
+      downloadName: "que-hemos-aprendido-sirenas.png",
+      fields: [
+        { key: "learned", label: "¿Qué hemos aprendido?", aria: "Escribir que hemos aprendido", maxLength: 260, box: { left: 3.1, top: 40, width: 45.2, height: 46 }, canvas: { x: 65, y: 430, width: 650 } },
+        { key: "liked", label: "¿Qué nos ha gustado más?", aria: "Escribir que nos ha gustado mas", maxLength: 260, box: { left: 50.4, top: 40, width: 45.2, height: 46 }, canvas: { x: 820, y: 430, width: 650 } }
+      ]
+    }
   }
 ];
 
@@ -332,6 +453,7 @@ const wordDrawings = {
 const tiles = Array.from(document.querySelectorAll("[data-open]"));
 const activityTiles = Array.from(document.querySelectorAll(".activity-tile[data-open]"));
 const weekButtons = Array.from(document.querySelectorAll("[data-week-filter]"));
+const sessionStars = document.querySelector("[data-session-stars]");
 const panelImage = document.querySelector("[data-panel-image]");
 const panelStep = document.querySelector("[data-panel-step]");
 const panelTitle = document.querySelector("[data-panel-title]");
@@ -343,6 +465,8 @@ const quizCard = document.querySelector("[data-quiz-card]");
 const quizQuestion = document.querySelector("[data-quiz-question]");
 const quizFeedback = document.querySelector("[data-quiz-feedback]");
 const worksheetCard = document.querySelector("[data-worksheet-card]");
+const worksheetImage = document.querySelector("[data-worksheet-image]");
+const worksheetFieldsContainer = document.querySelector("[data-worksheet-fields]");
 const audioCard = document.querySelector("[data-audio-card]");
 const poemAudio = document.querySelector("[data-poem-audio]");
 const memoryCard = document.querySelector("[data-memory-card]");
@@ -374,6 +498,8 @@ const crosswordCard = document.querySelector("[data-crossword-card]");
 const crosswordStatus = document.querySelector("[data-crossword-status]");
 const crosswordBoard = document.querySelector("[data-crossword-board]");
 const letterTray = document.querySelector("[data-letter-tray]");
+const speakCrosswordWordsButton = document.querySelector("[data-speak-crossword-words]");
+const toggleCrosswordHintsButton = document.querySelector("[data-toggle-crossword-hints]");
 const timelineCard = document.querySelector("[data-timeline-card]");
 const timelineStatus = document.querySelector("[data-timeline-status]");
 const timelineRoad = document.querySelector("[data-timeline-road]");
@@ -392,14 +518,10 @@ const resetTimelineButton = document.querySelector("[data-reset-timeline]");
 const speakActivityButton = document.querySelector("[data-speak-activity]");
 const speakPageButton = document.querySelector("[data-speak-page]");
 const contrastButton = document.querySelector("[data-toggle-contrast]");
-const worksheetImagePath = "../content/resources/que sabemos de sirenas.png";
-const worksheetFields = {
-  known: document.querySelector('[data-sheet-field="known"]'),
-  want: document.querySelector('[data-sheet-field="want"]'),
-  how: document.querySelector('[data-sheet-field="how"]')
-};
+let currentWorksheet = null;
 
 let currentIndex = 0;
+const completedSessionActivities = new Set();
 let flippedCards = [];
 let matchedCards = 0;
 let selectedBit = null;
@@ -413,6 +535,7 @@ let selectedCharacteristic = null;
 let completedCharacteristics = 0;
 let selectedLetterTile = null;
 let completedCrosswordCells = 0;
+let currentCrosswordWords = [];
 let selectedTimelineCard = null;
 let completedTimelineItems = 0;
 
@@ -503,6 +626,7 @@ function renderQuiz(activity) {
         quizFeedback.textContent = activity.quiz.success;
         quizFeedback.classList.add("is-success");
         speak(activity.quiz.success);
+        markActivityDone(activity.id);
         Array.from(answerGrid.children).forEach((child) => {
           child.disabled = true;
         });
@@ -524,6 +648,31 @@ function shuffle(items) {
     [shuffled[index], shuffled[nextIndex]] = [shuffled[nextIndex], shuffled[index]];
   }
   return shuffled;
+}
+
+function renderSessionStars() {
+  sessionStars.replaceChildren();
+  activities.forEach((activity, index) => {
+    const button = document.createElement("button");
+    const isDone = completedSessionActivities.has(activity.id);
+    button.className = "session-star";
+    button.classList.toggle("is-active", index === currentIndex);
+    button.type = "button";
+    button.dataset.open = activity.id;
+    button.setAttribute("aria-label", `${isDone ? "Actividad hecha" : "Actividad sin finalizar"}: ${activity.step}. ${activity.title}`);
+    button.innerHTML = `<img src="assets/ui/${isDone ? "estrella-hecho.png" : "estrella-sin-hacer.png"}" alt="">`;
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      openActivity(activity.id, true);
+    });
+    sessionStars.appendChild(button);
+  });
+}
+
+function markActivityDone(id = activities[currentIndex]?.id) {
+  if (!id || completedSessionActivities.has(id)) return;
+  completedSessionActivities.add(id);
+  renderSessionStars();
 }
 
 function renderMemory(activity) {
@@ -582,6 +731,7 @@ function flipMemoryCard(button) {
     if (matchedCards === memoryGrid.children.length) {
       memoryStatus.textContent = "Juego terminado. Has encontrado todas las rimas.";
       speak("Juego terminado. Has encontrado todas las rimas.");
+      markActivityDone();
     }
     return;
   }
@@ -625,14 +775,70 @@ function tryFillBlank(blank, bit) {
   playChimeSound();
   speak(bit.dataset.word);
 
-  if (completedBits === document.querySelectorAll("[data-answer]").length) {
+  if (completedBits === poemFill.querySelectorAll("[data-answer]").length) {
     bitsStatus.textContent = "Muy bien. Has completado los versos.";
     speak("Muy bien. Has completado los versos.");
+    markActivityDone();
   } else {
     bitsStatus.textContent = "Muy bien. Sigue completando.";
   }
 
   selectedBit = null;
+}
+
+function getChoicesForBlank(activity, word) {
+  const configuredChoices = activity.choices?.[word];
+  if (configuredChoices?.length) return shuffle([...configuredChoices]);
+
+  const alternatives = Array.from(new Set(activity.blanks.filter((item) => item !== word))).slice(0, 2);
+  return shuffle([word, ...alternatives]);
+}
+
+function trySelectBlank(select) {
+  if (!select.value) return;
+
+  if (select.value !== select.dataset.answer) {
+    bitsStatus.textContent = "Prueba con otra palabra.";
+    speak("Prueba con otra palabra.");
+    select.value = "";
+    return;
+  }
+
+  select.classList.add("is-filled");
+  select.disabled = true;
+  completedBits += 1;
+  playChimeSound();
+  speak(select.dataset.answer);
+
+  if (completedBits === poemFill.querySelectorAll("[data-answer]").length) {
+    bitsStatus.textContent = "Muy bien. Has completado el poema.";
+    speak("Muy bien. Has completado el poema.");
+    markActivityDone();
+  } else {
+    bitsStatus.textContent = "Muy bien. Sigue completando.";
+  }
+}
+
+function createSelectBlank(word, activity) {
+  const select = document.createElement("select");
+  select.className = "poem-select";
+  select.dataset.answer = word;
+  select.setAttribute("aria-label", `Hueco para ${word}`);
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "Elige";
+  select.appendChild(placeholder);
+
+  getChoicesForBlank(activity, word).forEach((choice) => {
+    const option = document.createElement("option");
+    option.value = choice;
+    option.textContent = choice;
+    select.appendChild(option);
+  });
+
+  select.addEventListener("change", () => trySelectBlank(select));
+  return select;
 }
 
 function createBlank(word) {
@@ -644,8 +850,8 @@ function createBlank(word) {
   blank.addEventListener("dragover", (event) => event.preventDefault());
   blank.addEventListener("drop", (event) => {
     event.preventDefault();
-    const word = event.dataTransfer.getData("text/plain");
-    const bit = bitsTray.querySelector(`[data-word="${word}"]`);
+    const bitId = event.dataTransfer.getData("text/plain");
+    const bit = bitsTray.querySelector(`[data-bit-id="${bitId}"]`);
     tryFillBlank(blank, bit);
   });
   blank.addEventListener("click", () => tryFillBlank(blank, selectedBit));
@@ -656,7 +862,7 @@ function addText(target, text) {
   target.appendChild(document.createTextNode(text));
 }
 
-function renderPoemLine(parts) {
+function renderPoemLine(parts, activity) {
   const line = document.createElement("p");
   line.className = "poem-line";
 
@@ -665,7 +871,7 @@ function renderPoemLine(parts) {
       addText(line, part);
       return;
     }
-    line.appendChild(createBlank(part.blank));
+    line.appendChild(activity.completionMode === "select" ? createSelectBlank(part.blank, activity) : createBlank(part.blank));
   });
 
   poemFill.appendChild(line);
@@ -676,9 +882,9 @@ function renderBits(activity) {
   selectedBit = null;
   poemFill.replaceChildren();
   bitsTray.replaceChildren();
-  bitsStatus.textContent = "Arrastra una palabra a su hueco.";
+  bitsStatus.textContent = activity.completionMode === "select" ? "Elige la palabra correcta en cada desplegable." : "Arrastra una palabra a su hueco.";
 
-  [
+  const defaultPoemLines = [
     ["En un ", { blank: "acantilado" }, " solitario, una noche de junio,"],
     ["A la luz difusa del ", { blank: "plenilunio" }, ", presencié un episodio extraordinario"],
     ["A mi vera, dos ", { blank: "sirena" }, "s de cuerpo adolescente y larga ", { blank: "cabellera" }],
@@ -686,25 +892,35 @@ function renderBits(activity) {
     ["..."],
     ["Se fueron las sirenas alejando escoltadas por ágiles ", { blank: "delfines" }],
     ["Yo me quedé pensando: si les hubiera dado por cantar habría tenido que tirarme al ", { blank: "mar" }]
-  ].forEach(renderPoemLine);
+  ];
 
-  shuffle(activity.blanks).forEach((word) => {
+  (activity.poemLines || defaultPoemLines).forEach((line) => renderPoemLine(line, activity));
+
+  if (activity.completionMode === "select") {
+    bitsTray.hidden = true;
+    return;
+  }
+
+  bitsTray.hidden = false;
+
+  shuffle(activity.blanks.map((word, index) => ({ word, index }))).forEach((item) => {
     const bit = document.createElement("button");
     bit.className = "bit-card";
     bit.type = "button";
     bit.draggable = true;
-    bit.dataset.word = word;
-    bit.textContent = word;
+    bit.dataset.word = item.word;
+    bit.dataset.bitId = `${item.word}-${item.index}`;
+    bit.textContent = item.word;
     bit.addEventListener("dragstart", (event) => {
-      event.dataTransfer.setData("text/plain", word);
+      event.dataTransfer.setData("text/plain", bit.dataset.bitId);
     });
     bit.addEventListener("click", () => {
       if (bit.disabled) return;
       clearBitSelection();
       selectedBit = bit;
       bit.classList.add("is-selected");
-      bitsStatus.textContent = `Ahora toca el hueco de ${word}.`;
-      speak(word);
+      bitsStatus.textContent = `Ahora toca el hueco de ${item.word}.`;
+      speak(item.word);
     });
     bitsTray.appendChild(bit);
   });
@@ -742,6 +958,7 @@ function tryMatchAssociation(target, card) {
   if (completedAssociations === associationGrid.querySelectorAll(".association-target").length) {
     associationStatus.textContent = "Muy bien. Has unido todas las palabras.";
     speak("Muy bien. Has unido todas las palabras.");
+    markActivityDone();
   } else {
     associationStatus.textContent = "Muy bien. Sigue buscando parejas.";
   }
@@ -843,6 +1060,7 @@ function tryAddMagicWord(card) {
   if (completedMagicWords === totalValidWords) {
     magicBoxStatus.textContent = "Muy bien. Has guardado todas las palabras del poema.";
     speak("Muy bien. Has guardado todas las palabras del poema.");
+    markActivityDone();
   } else {
     magicBoxStatus.textContent = "Muy bien. Esa palabra sí sale en el poema.";
   }
@@ -931,6 +1149,7 @@ function renderMultiQuizQuestion(activity) {
             multiQuizProgress.textContent = "Test terminado";
             multiQuizFeedback.textContent = "Muy bien. Has terminado el test.";
             speak("Muy bien. Has terminado el test.");
+            markActivityDone();
           }
         }, 900);
         return;
@@ -971,6 +1190,7 @@ function updateCharacteristicCompletion(card) {
   if (completedCharacteristics === characterTray.children.length) {
     characterMatchStatus.textContent = "Muy bien. Has completado todos los personajes.";
     speak("Muy bien. Has completado todos los personajes.");
+    markActivityDone();
   }
 }
 
@@ -1104,6 +1324,7 @@ function tryFillCrosswordCell(cell, tile) {
   if (completedCrosswordCells === crosswordBoard.querySelectorAll(".crossword-cell.is-target").length) {
     crosswordStatus.textContent = "Muy bien. Has completado el crucigrama.";
     speak("Muy bien. Has completado el crucigrama.");
+    markActivityDone();
   } else {
     crosswordStatus.textContent = "Muy bien. Sigue completando palabras.";
   }
@@ -1112,9 +1333,12 @@ function tryFillCrosswordCell(cell, tile) {
 function renderCrossword(activity) {
   selectedLetterTile = null;
   completedCrosswordCells = 0;
+  currentCrosswordWords = activity.crosswordWords.map((entry) => entry.word);
   crosswordBoard.replaceChildren();
+  crosswordBoard.classList.remove("show-hints");
   letterTray.replaceChildren();
   crosswordStatus.textContent = "Toca una letra y despues una casilla blanca.";
+  toggleCrosswordHintsButton.textContent = "Mostrar siluetas";
 
   const templateCells = new Map();
   (activity.crosswordTemplateWords || []).forEach((entry) => {
@@ -1150,6 +1374,7 @@ function renderCrossword(activity) {
     cell.className = "crossword-cell is-target";
     cell.type = "button";
     cell.dataset.letter = cellData.letter;
+    cell.dataset.hint = cellData.letter;
     cell.style.gridRow = String(cellData.row + 1);
     cell.style.gridColumn = String(cellData.col + 1);
     cell.setAttribute("aria-label", `Casilla para la letra ${cellData.letter}`);
@@ -1223,6 +1448,7 @@ function renderTimeline(activity) {
     if (completedTimelineItems === activity.timelineEvents.length) {
       timelineStatus.textContent = "Muy bien. Has completado la linea del tiempo.";
       speak("Muy bien. Has completado la linea del tiempo.");
+      markActivityDone();
     } else {
       timelineStatus.textContent = "Muy bien. Sigue colocando hitos.";
     }
@@ -1273,6 +1499,34 @@ function renderTimeline(activity) {
   });
 }
 
+function renderWorksheet(activity) {
+  currentWorksheet = activity.worksheet;
+  worksheetImage.src = currentWorksheet.image;
+  worksheetImage.alt = currentWorksheet.imageAlt;
+  worksheetFieldsContainer.replaceChildren();
+
+  currentWorksheet.fields.forEach((field) => {
+    const label = document.createElement("label");
+    label.className = "worksheet-field";
+    label.style.left = `${field.box.left}%`;
+    label.style.top = `${field.box.top}%`;
+    label.style.width = `${field.box.width}%`;
+    label.style.height = `${field.box.height}%`;
+
+    const labelText = document.createElement("span");
+    labelText.textContent = field.label;
+
+    const textarea = document.createElement("textarea");
+    textarea.dataset.sheetField = field.key;
+    textarea.maxLength = field.maxLength;
+    textarea.setAttribute("aria-label", field.aria);
+    textarea.addEventListener("input", () => markActivityDone(activity.id), { once: true });
+
+    label.append(labelText, textarea);
+    worksheetFieldsContainer.appendChild(label);
+  });
+}
+
 function setMode(activity) {
   const isQuiz = activity.kind === "quiz";
   const isWorksheet = activity.kind === "worksheet";
@@ -1309,6 +1563,10 @@ function setMode(activity) {
 
   if (isQuiz) {
     renderQuiz(activity);
+  } else if (isWorksheet) {
+    renderWorksheet(activity);
+    answerGrid.replaceChildren();
+    quizFeedback.textContent = "";
   } else if (isMemory) {
     renderMemory(activity);
     poemAudio.load();
@@ -1363,6 +1621,7 @@ function openActivity(id, shouldSpeak = false) {
   resourceLink.textContent = activity.resourceText;
   renderStory(activity);
   setMode(activity);
+  renderSessionStars();
   const openedTile = activityTiles.find((tile) => tile.dataset.open === id);
   if (openedTile) setWeekFilter(openedTile.dataset.week);
 
@@ -1414,18 +1673,13 @@ function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
 }
 
 function drawWorksheetText(ctx, values) {
-  const boxes = {
-    known: { x: 70, y: 450, width: 405 },
-    want: { x: 560, y: 450, width: 390 },
-    how: { x: 1035, y: 450, width: 410 }
-  };
-
   ctx.fillStyle = "#12343a";
   ctx.font = "700 34px Arial";
   ctx.textBaseline = "top";
 
-  Object.entries(boxes).forEach(([key, box]) => {
-    wrapText(ctx, values[key], box.x, box.y, box.width, 44);
+  currentWorksheet.fields.forEach((field) => {
+    const value = values[field.key] || "";
+    wrapText(ctx, value, field.canvas.x, field.canvas.y, field.canvas.width, 44);
   });
 }
 
@@ -1440,11 +1694,11 @@ function downloadWorksheet() {
     canvas.height = image.naturalHeight;
     const ctx = canvas.getContext("2d");
     ctx.drawImage(image, 0, 0);
-    drawWorksheetText(ctx, {
-      known: worksheetFields.known.value,
-      want: worksheetFields.want.value,
-      how: worksheetFields.how.value
+    const values = {};
+    currentWorksheet.fields.forEach((field) => {
+      values[field.key] = worksheetFieldsContainer.querySelector(`[data-sheet-field="${field.key}"]`)?.value || "";
     });
+    drawWorksheetText(ctx, values);
 
     try {
       canvas.toBlob((blob) => {
@@ -1456,7 +1710,7 @@ function downloadWorksheet() {
 
         const link = document.createElement("a");
         const url = URL.createObjectURL(blob);
-        link.download = "que-sabemos-sirenas.png";
+        link.download = currentWorksheet.downloadName;
         link.href = url;
         document.body.appendChild(link);
         link.click();
@@ -1477,7 +1731,7 @@ function downloadWorksheet() {
     downloadSheetButton.textContent = "Descargar ficha";
     speak("No he podido preparar la ficha. Revisa que la imagen original esta disponible.");
   };
-  image.src = worksheetImagePath;
+  image.src = currentWorksheet.image;
 }
 
 document.addEventListener("click", (event) => {
@@ -1531,6 +1785,17 @@ resetCharacterMatchButton.addEventListener("click", () => {
 resetCrosswordButton.addEventListener("click", () => {
   const activity = activities[currentIndex];
   if (activity.kind === "crossword") renderCrossword(activity);
+});
+
+speakCrosswordWordsButton.addEventListener("click", () => {
+  if (!currentCrosswordWords.length) return;
+  speak(`Las palabras son: ${currentCrosswordWords.join(", ")}.`);
+  crosswordStatus.textContent = `Palabras para completar: ${currentCrosswordWords.join(", ")}.`;
+});
+
+toggleCrosswordHintsButton.addEventListener("click", () => {
+  const areHintsVisible = crosswordBoard.classList.toggle("show-hints");
+  toggleCrosswordHintsButton.textContent = areHintsVisible ? "Ocultar siluetas" : "Mostrar siluetas";
 });
 
 resetTimelineButton.addEventListener("click", () => {
