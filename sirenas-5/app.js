@@ -264,6 +264,57 @@ const activities = [
       { id: "ojos", text: "Tienen ojos", matches: ["triton", "sirena", "delfin"] },
       { id: "espiraculo", text: "Respira por el espiráculo y no por la nariz", matches: ["delfin"] }
     ]
+  },
+  {
+    id: "semana-3-crucigrama-marino",
+    kind: "crossword",
+    week: "Semana 3",
+    step: "Semana 3 · Día 11",
+    title: "Crucigrama marino",
+    text: "Completamos las palabras BARCO, VELERO y POPA con fichas de letras.",
+    image: "assets/letters/b.png",
+    imageAlt: "Ficha de madera con la letra B",
+    resource: "../content/resources/bits SIRENAS angel gonzalez.pdf",
+    resourceText: "Abrir bits originales",
+    story: [
+      "Toca una letra.",
+      "Toca la casilla blanca que corresponda.",
+      "Algunas letras no sirven para completar las palabras."
+    ],
+    crosswordWords: [
+      { word: "BARCO", row: 2, col: 3 },
+      { word: "VELERO", row: 3, col: 4 },
+      { word: "POPA", row: 5, col: 2 }
+    ],
+    crosswordTemplateWords: [
+      { word: "DELFIN", row: 1, col: 1 },
+      { word: "SIRENA", row: 0, col: 5, direction: "vertical" },
+      { word: "TRITON", row: 4, col: 0 }
+    ],
+    crosswordLetters: ["B", "A", "C", "O", "V", "L", "E", "R", "O", "P", "O", "P", "R", "O", "E", "U", "S", "K", "T"]
+  },
+  {
+    id: "semana-3-linea-tiempo-angel",
+    kind: "timeline",
+    week: "Semana 3",
+    step: "Semana 3 · Día 12",
+    title: "Linea del tiempo de Ángel González",
+    text: "Conocemos cuatro momentos importantes de la vida de Ángel González.",
+    image: "assets/ui/angel-gonzalez.jpg",
+    imageAlt: "Retrato de Ángel González",
+    resource: "../content/resources/bits SIRENAS angel gonzalez.pdf",
+    resourceText: "Abrir bits originales",
+    story: [
+      "Miramos la foto de Ángel González.",
+      "Recorremos la línea del tiempo.",
+      "Leemos cuatro momentos importantes de su vida."
+    ],
+    timelineEvents: [
+      { year: "1925", text: "Nace en Oviedo" },
+      { year: "1945", text: "Fue maestro en León" },
+      { year: "1985", text: "Premio Príncipe de Asturias de las Letras" },
+      { year: "2011", text: "Escribe el poema de Sirenas" }
+    ]
   }
 ];
 
@@ -319,6 +370,14 @@ const characterMatchCard = document.querySelector("[data-character-match-card]")
 const characterMatchStatus = document.querySelector("[data-character-match-status]");
 const characterTargets = document.querySelector("[data-character-targets]");
 const characterTray = document.querySelector("[data-character-tray]");
+const crosswordCard = document.querySelector("[data-crossword-card]");
+const crosswordStatus = document.querySelector("[data-crossword-status]");
+const crosswordBoard = document.querySelector("[data-crossword-board]");
+const letterTray = document.querySelector("[data-letter-tray]");
+const timelineCard = document.querySelector("[data-timeline-card]");
+const timelineStatus = document.querySelector("[data-timeline-status]");
+const timelineRoad = document.querySelector("[data-timeline-road]");
+const timelineTray = document.querySelector("[data-timeline-tray]");
 const createZone = document.querySelector(".create-zone");
 const resetQuizButton = document.querySelector("[data-reset-quiz]");
 const downloadSheetButton = document.querySelector("[data-download-sheet]");
@@ -328,6 +387,8 @@ const resetAssociationButton = document.querySelector("[data-reset-association]"
 const resetMagicBoxButton = document.querySelector("[data-reset-magic-box]");
 const resetMultiQuizButton = document.querySelector("[data-reset-multi-quiz]");
 const resetCharacterMatchButton = document.querySelector("[data-reset-character-match]");
+const resetCrosswordButton = document.querySelector("[data-reset-crossword]");
+const resetTimelineButton = document.querySelector("[data-reset-timeline]");
 const speakActivityButton = document.querySelector("[data-speak-activity]");
 const speakPageButton = document.querySelector("[data-speak-page]");
 const contrastButton = document.querySelector("[data-toggle-contrast]");
@@ -350,6 +411,10 @@ let completedMagicWords = 0;
 let currentMultiQuestion = 0;
 let selectedCharacteristic = null;
 let completedCharacteristics = 0;
+let selectedLetterTile = null;
+let completedCrosswordCells = 0;
+let selectedTimelineCard = null;
+let completedTimelineItems = 0;
 
 function speak(text) {
   if (!("speechSynthesis" in window)) return;
@@ -995,6 +1060,219 @@ function renderCharacterMatch(activity) {
   });
 }
 
+function letterImagePath(letter) {
+  return `assets/letters/${letter.toLowerCase()}.png`;
+}
+
+const availableLetterImages = new Set(["A", "B", "C", "E", "K", "L", "O", "P", "R", "S", "T", "U", "V"]);
+
+function letterTileMarkup(letter) {
+  if (availableLetterImages.has(letter)) {
+    return `<img src="${letterImagePath(letter)}" alt="Letra ${letter}">`;
+  }
+  return `<span class="letter-fallback" aria-label="Letra ${letter}">${letter}</span>`;
+}
+
+function clearLetterSelection() {
+  if (selectedLetterTile) {
+    selectedLetterTile.classList.remove("is-selected");
+    selectedLetterTile = null;
+  }
+}
+
+function tryFillCrosswordCell(cell, tile) {
+  if (!cell || !tile || cell.disabled || tile.disabled) return;
+
+  if (cell.dataset.letter !== tile.dataset.letter) {
+    crosswordStatus.textContent = "Prueba con otra letra.";
+    speak("Prueba con otra letra.");
+    clearLetterSelection();
+    return;
+  }
+
+  cell.innerHTML = letterTileMarkup(tile.dataset.letter);
+  cell.classList.add("is-filled");
+  cell.disabled = true;
+  tile.disabled = true;
+  tile.classList.remove("is-selected");
+  tile.classList.add("is-used");
+  selectedLetterTile = null;
+  completedCrosswordCells += 1;
+  playChimeSound();
+  speak(tile.dataset.letter);
+
+  if (completedCrosswordCells === crosswordBoard.querySelectorAll(".crossword-cell.is-target").length) {
+    crosswordStatus.textContent = "Muy bien. Has completado el crucigrama.";
+    speak("Muy bien. Has completado el crucigrama.");
+  } else {
+    crosswordStatus.textContent = "Muy bien. Sigue completando palabras.";
+  }
+}
+
+function renderCrossword(activity) {
+  selectedLetterTile = null;
+  completedCrosswordCells = 0;
+  crosswordBoard.replaceChildren();
+  letterTray.replaceChildren();
+  crosswordStatus.textContent = "Toca una letra y despues una casilla blanca.";
+
+  const templateCells = new Map();
+  (activity.crosswordTemplateWords || []).forEach((entry) => {
+    [...entry.word].forEach((letter, offset) => {
+      const row = entry.direction === "vertical" ? entry.row + offset : entry.row;
+      const col = entry.direction === "vertical" ? entry.col : entry.col + offset;
+      const key = `${row}-${col}`;
+      templateCells.set(key, { letter, row, col, isTemplate: true });
+    });
+  });
+
+  const targetCells = new Map();
+  activity.crosswordWords.forEach((entry) => {
+    [...entry.word].forEach((letter, offset) => {
+      const key = `${entry.row}-${entry.col + offset}`;
+      const templateCell = templateCells.get(key);
+      if (templateCell && templateCell.letter === letter) return;
+      targetCells.set(key, { letter, row: entry.row, col: entry.col + offset });
+    });
+  });
+
+  templateCells.forEach((cellData) => {
+    const cell = document.createElement("div");
+    cell.className = "crossword-cell is-template";
+    cell.style.gridRow = String(cellData.row + 1);
+    cell.style.gridColumn = String(cellData.col + 1);
+    cell.innerHTML = letterTileMarkup(cellData.letter);
+    crosswordBoard.appendChild(cell);
+  });
+
+  targetCells.forEach((cellData) => {
+    const cell = document.createElement("button");
+    cell.className = "crossword-cell is-target";
+    cell.type = "button";
+    cell.dataset.letter = cellData.letter;
+    cell.style.gridRow = String(cellData.row + 1);
+    cell.style.gridColumn = String(cellData.col + 1);
+    cell.setAttribute("aria-label", `Casilla para la letra ${cellData.letter}`);
+    cell.addEventListener("dragover", (event) => event.preventDefault());
+    cell.addEventListener("drop", (event) => {
+      event.preventDefault();
+      const tileId = event.dataTransfer.getData("text/plain");
+      const tile = letterTray.querySelector(`[data-tile-id="${tileId}"]`);
+      tryFillCrosswordCell(cell, tile);
+    });
+    cell.addEventListener("click", () => tryFillCrosswordCell(cell, selectedLetterTile));
+    crosswordBoard.appendChild(cell);
+  });
+
+  shuffle(activity.crosswordLetters.map((letter, index) => ({ letter, index }))).forEach((item) => {
+    const tile = document.createElement("button");
+    tile.className = "letter-tile";
+    tile.type = "button";
+    tile.draggable = true;
+    tile.dataset.letter = item.letter;
+    tile.dataset.tileId = `${item.letter}-${item.index}`;
+    tile.innerHTML = letterTileMarkup(item.letter);
+    tile.addEventListener("dragstart", (event) => {
+      event.dataTransfer.setData("text/plain", tile.dataset.tileId);
+    });
+    tile.addEventListener("click", () => {
+      if (tile.disabled) return;
+      clearLetterSelection();
+      selectedLetterTile = tile;
+      tile.classList.add("is-selected");
+      crosswordStatus.textContent = `Ahora toca una casilla para la letra ${item.letter}.`;
+      speak(item.letter);
+    });
+    letterTray.appendChild(tile);
+  });
+}
+
+function renderTimeline(activity) {
+  selectedTimelineCard = null;
+  completedTimelineItems = 0;
+  timelineRoad.replaceChildren();
+  timelineTray.replaceChildren();
+  timelineStatus.textContent = "Arrastra cada hito a su ano.";
+
+  function clearTimelineSelection() {
+    if (selectedTimelineCard) {
+      selectedTimelineCard.classList.remove("is-selected");
+      selectedTimelineCard = null;
+    }
+  }
+
+  function placeTimelineCard(target, card) {
+    if (!target || !card || target.classList.contains("is-filled") || card.disabled) return;
+
+    if (target.dataset.year !== card.dataset.year) {
+      timelineStatus.textContent = "Prueba con otro ano.";
+      speak("Prueba con otro ano.");
+      clearTimelineSelection();
+      return;
+    }
+
+    target.textContent = card.textContent;
+    target.classList.add("is-filled");
+    card.disabled = true;
+    card.classList.remove("is-selected");
+    card.classList.add("is-used");
+    selectedTimelineCard = null;
+    completedTimelineItems += 1;
+    playChimeSound();
+
+    if (completedTimelineItems === activity.timelineEvents.length) {
+      timelineStatus.textContent = "Muy bien. Has completado la linea del tiempo.";
+      speak("Muy bien. Has completado la linea del tiempo.");
+    } else {
+      timelineStatus.textContent = "Muy bien. Sigue colocando hitos.";
+    }
+  }
+
+  activity.timelineEvents.forEach((event) => {
+    const item = document.createElement("article");
+    item.className = "timeline-item";
+    item.innerHTML = `<strong>${event.year}</strong><span class="timeline-dot" aria-hidden="true"></span>`;
+    const target = document.createElement("button");
+    target.className = "timeline-target";
+    target.type = "button";
+    target.dataset.year = event.year;
+    target.textContent = "Suelta aqui";
+    target.setAttribute("aria-label", `Colocar hito del ano ${event.year}`);
+    target.addEventListener("dragover", (event) => event.preventDefault());
+    target.addEventListener("drop", (dropEvent) => {
+      dropEvent.preventDefault();
+      const cardId = dropEvent.dataTransfer.getData("text/plain");
+      const card = timelineTray.querySelector(`[data-card-id="${cardId}"]`);
+      placeTimelineCard(target, card);
+    });
+    target.addEventListener("click", () => placeTimelineCard(target, selectedTimelineCard));
+    item.appendChild(target);
+    timelineRoad.appendChild(item);
+  });
+
+  shuffle(activity.timelineEvents.map((event, index) => ({ ...event, index }))).forEach((event) => {
+    const card = document.createElement("button");
+    card.className = "timeline-card-item";
+    card.type = "button";
+    card.draggable = true;
+    card.dataset.year = event.year;
+    card.dataset.cardId = `${event.year}-${event.index}`;
+    card.textContent = event.text;
+    card.addEventListener("dragstart", (dragEvent) => {
+      dragEvent.dataTransfer.setData("text/plain", card.dataset.cardId);
+    });
+    card.addEventListener("click", () => {
+      if (card.disabled) return;
+      clearTimelineSelection();
+      selectedTimelineCard = card;
+      card.classList.add("is-selected");
+      timelineStatus.textContent = `Ahora toca el ano ${event.year}.`;
+      speak(event.text);
+    });
+    timelineTray.appendChild(card);
+  });
+}
+
 function setMode(activity) {
   const isQuiz = activity.kind === "quiz";
   const isWorksheet = activity.kind === "worksheet";
@@ -1004,6 +1282,8 @@ function setMode(activity) {
   const isMagicBox = activity.kind === "magic-box";
   const isMultiQuiz = activity.kind === "multi-quiz";
   const isCharacterMatch = activity.kind === "character-match";
+  const isCrossword = activity.kind === "crossword";
+  const isTimeline = activity.kind === "timeline";
   quizCard.hidden = !isQuiz;
   worksheetCard.hidden = !isWorksheet;
   audioCard.hidden = !isMemory;
@@ -1013,6 +1293,8 @@ function setMode(activity) {
   magicBoxCard.hidden = !isMagicBox;
   multiQuizCard.hidden = !isMultiQuiz;
   characterMatchCard.hidden = !isCharacterMatch;
+  crosswordCard.hidden = !isCrossword;
+  timelineCard.hidden = !isTimeline;
   createZone.hidden = !isQuiz;
   resetQuizButton.hidden = !isQuiz;
   downloadSheetButton.hidden = !isWorksheet;
@@ -1022,6 +1304,8 @@ function setMode(activity) {
   resetMagicBoxButton.hidden = !isMagicBox;
   resetMultiQuizButton.hidden = !isMultiQuiz;
   resetCharacterMatchButton.hidden = !isCharacterMatch;
+  resetCrosswordButton.hidden = !isCrossword;
+  resetTimelineButton.hidden = !isTimeline;
 
   if (isQuiz) {
     renderQuiz(activity);
@@ -1048,6 +1332,14 @@ function setMode(activity) {
     quizFeedback.textContent = "";
   } else if (isCharacterMatch) {
     renderCharacterMatch(activity);
+    answerGrid.replaceChildren();
+    quizFeedback.textContent = "";
+  } else if (isCrossword) {
+    renderCrossword(activity);
+    answerGrid.replaceChildren();
+    quizFeedback.textContent = "";
+  } else if (isTimeline) {
+    renderTimeline(activity);
     answerGrid.replaceChildren();
     quizFeedback.textContent = "";
   } else {
@@ -1096,6 +1388,8 @@ function setWeekFilter(week, openFirst = false) {
   const firstTile = activityTiles.find((tile) => tile.dataset.week === week);
   if (firstTile) openActivity(firstTile.dataset.open, true);
 }
+
+window.openActivity = openActivity;
 
 function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
   const normalized = text.trim().replace(/\s+/g, " ");
@@ -1188,7 +1482,7 @@ function downloadWorksheet() {
 
 document.addEventListener("click", (event) => {
   const tile = event.target.closest("[data-open]");
-  if (!tile) return;
+  if (!tile || tile.hasAttribute("onclick")) return;
   event.preventDefault();
   openActivity(tile.dataset.open, true);
 });
@@ -1232,6 +1526,16 @@ resetMultiQuizButton.addEventListener("click", () => {
 resetCharacterMatchButton.addEventListener("click", () => {
   const activity = activities[currentIndex];
   if (activity.kind === "character-match") renderCharacterMatch(activity);
+});
+
+resetCrosswordButton.addEventListener("click", () => {
+  const activity = activities[currentIndex];
+  if (activity.kind === "crossword") renderCrossword(activity);
+});
+
+resetTimelineButton.addEventListener("click", () => {
+  const activity = activities[currentIndex];
+  if (activity.kind === "timeline") renderTimeline(activity);
 });
 
 magicBoxDropzone.addEventListener("dragover", (event) => event.preventDefault());

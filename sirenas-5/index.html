@@ -37,48 +37,56 @@
         </div>
       </div>
       <div class="stage-art" aria-label="Imagen del proyecto Sirenas">
-        <img src="../content/resources/SIRENAS IMAGEN 1.jpg" alt="Ilustracion marina del proyecto Sirenas" decoding="async">
+        <img src="assets/ui/portada-sirenas.webp" alt="Portada ilustrada del poema Sirenas" decoding="async">
       </div>
     </section>
 
     <section class="week-strip" aria-label="Semanas del proyecto">
       <button class="week-pill is-active" type="button" data-week-filter="1">Semana 1</button>
       <button class="week-pill" type="button" data-week-filter="2">Semana 2</button>
-      <button class="week-pill" type="button" disabled>Semana 3</button>
+      <button class="week-pill" type="button" data-week-filter="3">Semana 3</button>
     </section>
 
     <section class="activity-grid" aria-label="Actividades del proyecto">
-      <button class="activity-tile is-active" type="button" data-week="1" data-open="semana-1-carta-coco">
+      <button class="activity-tile is-active" type="button" data-week="1" data-open="semana-1-carta-coco" onclick="openActivity('semana-1-carta-coco', true)">
         <img src="../content/resources/tortuga coco.jpg" alt="" loading="lazy" decoding="async">
         <span>Carta de Coco</span>
       </button>
-      <button class="activity-tile" type="button" data-week="1" data-open="semana-1-que-sabemos">
+      <button class="activity-tile" type="button" data-week="1" data-open="semana-1-que-sabemos" onclick="openActivity('semana-1-que-sabemos', true)">
         <img src="../content/resources/thumbs/que-sabemos-de-sirenas.jpg" alt="" loading="lazy" decoding="async">
         <span>¿Qué sabemos?</span>
       </button>
-      <button class="activity-tile" type="button" data-week="1" data-open="semana-1-poema-rimas">
+      <button class="activity-tile" type="button" data-week="1" data-open="semana-1-poema-rimas" onclick="openActivity('semana-1-poema-rimas', true)">
         <img src="../content/resources/thumbs/lectura-poema.jpg" alt="" loading="lazy" decoding="async">
         <span>Poema y rimas</span>
       </button>
-      <button class="activity-tile" type="button" data-week="1" data-open="semana-1-bits-lectura">
+      <button class="activity-tile" type="button" data-week="1" data-open="semana-1-bits-lectura" onclick="openActivity('semana-1-bits-lectura', true)">
         <img src="../content/resources/thumbs/panel-de-palabras-del-mar.jpg" alt="" loading="lazy" decoding="async">
         <span>Bits de lectura</span>
       </button>
-      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-palabras-imagenes" hidden>
+      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-palabras-imagenes" onclick="openActivity('semana-2-palabras-imagenes', true)" hidden>
         <img src="assets/bits-cut/sirena.jpg" alt="" loading="lazy" decoding="async">
         <span>Palabras e imagenes</span>
       </button>
-      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-caja-palabras-magicas" hidden>
+      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-caja-palabras-magicas" onclick="openActivity('semana-2-caja-palabras-magicas', true)" hidden>
         <img src="assets/ui/caja-magica.jpg" alt="" loading="lazy" decoding="async">
         <span>Caja de palabras magicas</span>
       </button>
-      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-test-poesia-grecia" hidden>
+      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-test-poesia-grecia" onclick="openActivity('semana-2-test-poesia-grecia', true)" hidden>
         <img src="assets/ui/lira.jpg" alt="" loading="lazy" decoding="async">
         <span>Test de poesia</span>
       </button>
-      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-personajes-caracteristicas" hidden>
+      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-personajes-caracteristicas" onclick="openActivity('semana-2-personajes-caracteristicas', true)" hidden>
         <img src="assets/bits-cut/triton.jpg" alt="" loading="lazy" decoding="async">
         <span>Personajes y caracteristicas</span>
+      </button>
+      <button class="activity-tile" type="button" data-week="3" data-open="semana-3-crucigrama-marino" onclick="openActivity('semana-3-crucigrama-marino', true)" hidden>
+        <img src="assets/letters/b.png" alt="" loading="lazy" decoding="async">
+        <span>Crucigrama marino</span>
+      </button>
+      <button class="activity-tile" type="button" data-week="3" data-open="semana-3-linea-tiempo-angel" onclick="openActivity('semana-3-linea-tiempo-angel', true)" hidden>
+        <img src="assets/ui/angel-gonzalez.jpg" alt="" loading="lazy" decoding="async">
+        <span>Linea del tiempo</span>
       </button>
     </section>
 
@@ -161,6 +169,21 @@
           <div class="character-targets" data-character-targets></div>
           <div class="character-tray" data-character-tray aria-label="Caracteristicas de los personajes"></div>
         </div>
+        <div class="crossword-card" data-crossword-card hidden>
+          <p class="quiz-question">Completa el crucigrama</p>
+          <div class="crossword-status" data-crossword-status aria-live="polite">Toca una letra y despues una casilla blanca.</div>
+          <div class="crossword-board" data-crossword-board aria-label="Crucigrama con las palabras barco velero y popa"></div>
+          <div class="letter-tray" data-letter-tray aria-label="Letras para completar el crucigrama"></div>
+        </div>
+        <div class="timeline-card" data-timeline-card hidden>
+          <p class="quiz-question">Linea del tiempo de Angel Gonzalez</p>
+          <div class="timeline-portrait">
+            <img src="assets/ui/angel-gonzalez.jpg" alt="Retrato de Angel Gonzalez" loading="lazy" decoding="async">
+          </div>
+          <div class="timeline-status" data-timeline-status aria-live="polite">Arrastra cada hito a su ano.</div>
+          <div class="timeline-road" data-timeline-road aria-label="Linea del tiempo de Angel Gonzalez"></div>
+          <div class="timeline-tray" data-timeline-tray aria-label="Hitos biograficos para colocar en la linea del tiempo"></div>
+        </div>
         <div class="panel-actions">
           <button class="primary-action" type="button" data-speak-activity>Escuchar</button>
           <button class="secondary-action" type="button" data-reset-quiz>Repetir pregunta</button>
@@ -171,6 +194,8 @@
           <button class="secondary-action" type="button" data-reset-magic-box hidden>Reiniciar caja</button>
           <button class="secondary-action" type="button" data-reset-multi-quiz hidden>Reiniciar test</button>
           <button class="secondary-action" type="button" data-reset-character-match hidden>Reiniciar personajes</button>
+          <button class="secondary-action" type="button" data-reset-crossword hidden>Reiniciar crucigrama</button>
+          <button class="secondary-action" type="button" data-reset-timeline hidden>Reiniciar linea del tiempo</button>
         </div>
       </div>
     </section>

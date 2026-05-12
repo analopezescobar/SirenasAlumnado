@@ -25,7 +25,8 @@ Abrir `sirenas-5/index.html` en el navegador. No necesita servidor ni instalacio
 - Semana 2, dia 7: caja de palabras magicas para arrastrar solo los bits que aparecen en el poema.
 - Semana 2, dia 8: test de respuesta multiple sobre el origen de la poesia en Grecia.
 - Semana 2, dia 9: emparejamiento de Triton, Sirena y Delfin con sus caracteristicas.
+- Semana 3, dia 11: crucigrama marino para completar BARCO, VELERO y POPA con fichas de letras.
 
 ## Mantenimiento
 
-Este proyecto usa recursos de `../content/resources/`, `../content/resources/thumbs/`, `sirenas-5/assets/bits-cut/` y `sirenas-5/assets/ui/`. Si se mueve de carpeta, hay que actualizar esas rutas relativas.
+Este proyecto usa recursos de `../content/resources/`, `../content/resources/thumbs/`, `sirenas-5/assets/bits-cut/`, `sirenas-5/assets/ui/` y `sirenas-5/assets/letters/`. Si se mueve de carpeta, hay que actualizar esas rutas relativas.
