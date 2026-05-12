@@ -22,7 +22,10 @@ Abrir `sirenas-5/index.html` en el navegador. No necesita servidor ni instalacio
 - Semana 1, actividad 3: escucha del poema con `poesia-5-anos-a-ana.mp3` y juego memory para unir palabras que riman. Incluye dibujos infantiles en cada ficha y tintineo al descubrirlas.
 - Semana 1, actividad 4: versos del poema con huecos y bits de lectura para arrastrar o tocar.
 - Semana 2, dia 6: asociacion de 18 imagenes de bits de lectura en grupos de tres, con tarjetas de palabras en mayusculas y minusculas debajo de cada grupo.
+- Semana 2, dia 7: caja de palabras magicas para arrastrar solo los bits que aparecen en el poema.
+- Semana 2, dia 8: test de respuesta multiple sobre el origen de la poesia en Grecia.
+- Semana 2, dia 9: emparejamiento de Triton, Sirena y Delfin con sus caracteristicas.
 
 ## Mantenimiento
 
-Este proyecto usa recursos de `../content/resources/`, `../content/resources/thumbs/` y `sirenas-5/assets/bits-cut/`. Si se mueve de carpeta, hay que actualizar esas rutas relativas.
+Este proyecto usa recursos de `../content/resources/`, `../content/resources/thumbs/`, `sirenas-5/assets/bits-cut/` y `sirenas-5/assets/ui/`. Si se mueve de carpeta, hay que actualizar esas rutas relativas.

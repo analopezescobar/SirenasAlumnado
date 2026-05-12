@@ -142,6 +142,128 @@ const activities = [
         { key: "velero", upper: "VELERO", lower: "velero", image: "assets/bits-cut/velero.jpg" }
       ]
     ]
+  },
+  {
+    id: "semana-2-caja-palabras-magicas",
+    kind: "magic-box",
+    week: "Semana 2",
+    step: "Semana 2 · Día 7",
+    title: "La caja de palabras mágicas",
+    text: "Arrastramos a la caja mágica los bits de lectura que sí aparecen en el poema Sirenas.",
+    image: "assets/ui/caja-magica.jpg",
+    imageAlt: "Caja mágica abierta para guardar palabras del poema",
+    resource: "../content/resources/bits SIRENAS angel gonzalez.pdf",
+    resourceText: "Abrir bits originales",
+    story: [
+      "Mira cada bit de lectura.",
+      "Arrastra a la caja solo las palabras que salen en el poema.",
+      "Timón, poema, marinero y marinera no forman parte del poema."
+    ],
+    magicWords: [
+      { key: "acantilado", upper: "ACANTILADO", lower: "acantilado", valid: true },
+      { key: "barco", upper: "BARCO", lower: "barco", valid: true },
+      { key: "cabellera", upper: "CABELLERA", lower: "cabellera", valid: true },
+      { key: "caracola", upper: "CARACOLA", lower: "caracola", valid: true },
+      { key: "delfin", upper: "DELFÍN", lower: "delfín", valid: true },
+      { key: "mar", upper: "MAR", lower: "mar", valid: true },
+      { key: "marinera", upper: "MARINERA", lower: "marinera", valid: false },
+      { key: "marinero", upper: "MARINERO", lower: "marinero", valid: false },
+      { key: "mensaje", upper: "MENSAJE", lower: "mensaje", valid: true },
+      { key: "ola", upper: "OLA", lower: "ola", valid: true },
+      { key: "plenilunio", upper: "PLENILUNIO", lower: "plenilunio", valid: true },
+      { key: "poema", upper: "POEMA", lower: "poema", valid: false },
+      { key: "poeta", upper: "POETA", lower: "poeta", valid: true },
+      { key: "sal", upper: "SAL", lower: "sal", valid: true },
+      { key: "sirena", upper: "SIRENA", lower: "sirena", valid: true },
+      { key: "timon", upper: "TIMÓN", lower: "timón", valid: false },
+      { key: "triton", upper: "TRITÓN", lower: "tritón", valid: true },
+      { key: "velero", upper: "VELERO", lower: "velero", valid: true }
+    ]
+  },
+  {
+    id: "semana-2-test-poesia-grecia",
+    kind: "multi-quiz",
+    week: "Semana 2",
+    step: "Semana 2 · Día 8",
+    title: "Test: el origen de la poesía",
+    text: "Respondemos tres preguntas sobre las primeras poesías y la poesía en Grecia.",
+    image: "assets/ui/lira.jpg",
+    imageAlt: "Lira griega para el test de poesía",
+    resource: "../content/resources/5.png",
+    resourceText: "Abrir ficha original",
+    story: [
+      "Lee la pregunta.",
+      "Mira las imágenes de ayuda.",
+      "Toca la respuesta correcta."
+    ],
+    questions: [
+      {
+        question: "Las primeras poesías aparecen en:",
+        visual: "assets/ui/lienzo.avif",
+        answers: [
+          { text: "Grecia", image: "assets/ui/bandera-grecia.webp", alt: "Bandera de Grecia", correct: true },
+          { text: "España", image: "assets/ui/bandera-espana.webp", alt: "Bandera de España", correct: false },
+          { text: "Portugal", image: "assets/ui/bandera-portugal.png", alt: "Bandera de Portugal", correct: false }
+        ],
+        success: "Muy bien. Las primeras poesías aparecen en Grecia.",
+        retry: "Casi. Mira la bandera de Grecia y prueba otra vez."
+      },
+      {
+        question: "El padre de la poesía es:",
+        visual: "assets/ui/libro.png",
+        answers: [
+          { text: "Homero", correct: true },
+          { text: "Aristóteles", correct: false },
+          { text: "Platón", correct: false }
+        ],
+        success: "Muy bien. Homero es considerado el padre de la poesía.",
+        retry: "Casi. La respuesta correcta empieza por Ho."
+      },
+      {
+        question: "Las poesías en Grecia se:",
+        visual: "assets/ui/lira.jpg",
+        answers: [
+          { text: "Leían", correct: false },
+          { text: "Cantaban", correct: true },
+          { text: "Dibujaban", correct: false }
+        ],
+        success: "Muy bien. En Grecia las poesías se cantaban.",
+        retry: "Casi. Fíjate en la lira: las poesías se cantaban."
+      }
+    ]
+  },
+  {
+    id: "semana-2-personajes-caracteristicas",
+    kind: "character-match",
+    week: "Semana 2",
+    step: "Semana 2 · Día 9",
+    title: "Personajes del poema",
+    text: "Emparejamos a Tritón, Sirena y Delfín con sus características.",
+    image: "assets/bits-cut/triton.jpg",
+    imageAlt: "Tritón de los bits de lectura",
+    resource: "../content/resources/bits SIRENAS angel gonzalez.pdf",
+    resourceText: "Abrir bits originales",
+    story: [
+      "Mira los personajes del poema.",
+      "Toca una tarjeta de características.",
+      "Después toca todos los personajes que cumplen esa característica."
+    ],
+    characters: [
+      { key: "triton", name: "Tritón", image: "assets/bits-cut/triton.jpg" },
+      { key: "sirena", name: "Sirena", image: "assets/bits-cut/sirena.jpg" },
+      { key: "delfin", name: "Delfín", image: "assets/bits-cut/delfin.jpg" }
+    ],
+    characteristicCards: [
+      { id: "mar", text: "Viven en el mar", matches: ["triton", "sirena", "delfin"] },
+      { id: "cola", text: "Tienen cola", matches: ["triton", "sirena", "delfin"] },
+      { id: "cantan", text: "Cantan", matches: ["sirena"] },
+      { id: "tridente", text: "Tienen tridente", matches: ["triton"] },
+      { id: "animal", text: "Es un animal", matches: ["delfin"] },
+      { id: "cabellera", text: "Tienen larga cabellera", matches: ["triton", "sirena"] },
+      { id: "brazos", text: "Tienen brazos", matches: ["triton", "sirena"] },
+      { id: "ojos", text: "Tienen ojos", matches: ["triton", "sirena", "delfin"] },
+      { id: "espiraculo", text: "Respira por el espiráculo y no por la nariz", matches: ["delfin"] }
+    ]
   }
 ];
 
@@ -182,12 +304,30 @@ const bitsTray = document.querySelector("[data-bits-tray]");
 const associationCard = document.querySelector("[data-association-card]");
 const associationStatus = document.querySelector("[data-association-status]");
 const associationGrid = document.querySelector("[data-association-grid]");
+const magicBoxCard = document.querySelector("[data-magic-box-card]");
+const magicBoxStatus = document.querySelector("[data-magic-box-status]");
+const magicBoxDropzone = document.querySelector("[data-magic-box-dropzone]");
+const magicBoxWords = document.querySelector("[data-magic-box-words]");
+const magicWordTray = document.querySelector("[data-magic-word-tray]");
+const multiQuizCard = document.querySelector("[data-multi-quiz-card]");
+const multiQuizProgress = document.querySelector("[data-multi-quiz-progress]");
+const multiQuizVisual = document.querySelector("[data-multi-quiz-visual]");
+const multiQuizQuestion = document.querySelector("[data-multi-quiz-question]");
+const multiAnswerGrid = document.querySelector("[data-multi-answer-grid]");
+const multiQuizFeedback = document.querySelector("[data-multi-quiz-feedback]");
+const characterMatchCard = document.querySelector("[data-character-match-card]");
+const characterMatchStatus = document.querySelector("[data-character-match-status]");
+const characterTargets = document.querySelector("[data-character-targets]");
+const characterTray = document.querySelector("[data-character-tray]");
 const createZone = document.querySelector(".create-zone");
 const resetQuizButton = document.querySelector("[data-reset-quiz]");
 const downloadSheetButton = document.querySelector("[data-download-sheet]");
 const resetMemoryButton = document.querySelector("[data-reset-memory]");
 const resetBitsButton = document.querySelector("[data-reset-bits]");
 const resetAssociationButton = document.querySelector("[data-reset-association]");
+const resetMagicBoxButton = document.querySelector("[data-reset-magic-box]");
+const resetMultiQuizButton = document.querySelector("[data-reset-multi-quiz]");
+const resetCharacterMatchButton = document.querySelector("[data-reset-character-match]");
 const speakActivityButton = document.querySelector("[data-speak-activity]");
 const speakPageButton = document.querySelector("[data-speak-page]");
 const contrastButton = document.querySelector("[data-toggle-contrast]");
@@ -205,6 +345,11 @@ let selectedBit = null;
 let completedBits = 0;
 let selectedWordCard = null;
 let completedAssociations = 0;
+let selectedMagicBit = null;
+let completedMagicWords = 0;
+let currentMultiQuestion = 0;
+let selectedCharacteristic = null;
+let completedCharacteristics = 0;
 
 function speak(text) {
   if (!("speechSynthesis" in window)) return;
@@ -599,24 +744,284 @@ function renderAssociation(activity) {
   });
 }
 
+function clearMagicBitSelection() {
+  if (selectedMagicBit) {
+    selectedMagicBit.classList.remove("is-selected");
+    selectedMagicBit = null;
+  }
+}
+
+function tryAddMagicWord(card) {
+  if (!card || card.disabled) return;
+
+  if (card.dataset.valid !== "true") {
+    magicBoxStatus.textContent = `${card.dataset.lower} no sale en el poema. Busca otra palabra.`;
+    speak(`${card.dataset.lower} no sale en el poema.`);
+    clearMagicBitSelection();
+    return;
+  }
+
+  const word = document.createElement("span");
+  word.className = "magic-box-word";
+  word.textContent = card.dataset.upper;
+  magicBoxWords.appendChild(word);
+
+  card.disabled = true;
+  card.classList.remove("is-selected");
+  card.classList.add("is-used");
+  selectedMagicBit = null;
+  completedMagicWords += 1;
+  playChimeSound();
+  speak(card.dataset.lower);
+
+  const totalValidWords = magicWordTray.querySelectorAll('[data-valid="true"]').length;
+  if (completedMagicWords === totalValidWords) {
+    magicBoxStatus.textContent = "Muy bien. Has guardado todas las palabras del poema.";
+    speak("Muy bien. Has guardado todas las palabras del poema.");
+  } else {
+    magicBoxStatus.textContent = "Muy bien. Esa palabra sí sale en el poema.";
+  }
+}
+
+function renderMagicBox(activity) {
+  completedMagicWords = 0;
+  selectedMagicBit = null;
+  magicBoxWords.replaceChildren();
+  magicWordTray.replaceChildren();
+  magicBoxStatus.textContent = "Arrastra dentro de la caja las palabras que salen en el poema.";
+
+  shuffle(activity.magicWords).forEach((item) => {
+    const card = document.createElement("button");
+    card.className = "magic-bit-card";
+    card.type = "button";
+    card.draggable = true;
+    card.dataset.key = item.key;
+    card.dataset.upper = item.upper;
+    card.dataset.lower = item.lower;
+    card.dataset.valid = String(item.valid);
+    card.innerHTML = `<span>${item.upper}</span><span>${item.lower}</span>`;
+    card.addEventListener("dragstart", (event) => {
+      event.dataTransfer.setData("text/plain", item.key);
+    });
+    card.addEventListener("click", () => {
+      if (card.disabled) return;
+      clearMagicBitSelection();
+      selectedMagicBit = card;
+      card.classList.add("is-selected");
+      magicBoxStatus.textContent = `Ahora toca la caja para guardar ${item.lower}.`;
+      speak(item.lower);
+    });
+    magicWordTray.appendChild(card);
+  });
+}
+
+function renderMultiQuizQuestion(activity) {
+  const question = activity.questions[currentMultiQuestion];
+  multiQuizProgress.textContent = `Pregunta ${currentMultiQuestion + 1} de ${activity.questions.length}`;
+  multiQuizQuestion.textContent = question.question;
+  multiQuizFeedback.textContent = "";
+  multiQuizFeedback.className = "quiz-feedback";
+  multiQuizVisual.replaceChildren();
+  multiAnswerGrid.replaceChildren();
+
+  if (question.visual) {
+    const image = document.createElement("img");
+    image.src = question.visual;
+    image.alt = "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    multiQuizVisual.appendChild(image);
+  }
+
+  question.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.className = "multi-answer-button";
+    button.type = "button";
+    if (answer.image) {
+      const image = document.createElement("img");
+      image.src = answer.image;
+      image.alt = answer.alt || "";
+      image.loading = "lazy";
+      image.decoding = "async";
+      button.appendChild(image);
+    }
+    const label = document.createElement("span");
+    label.textContent = answer.text;
+    button.appendChild(label);
+    button.addEventListener("click", () => {
+      if (answer.correct) {
+        button.classList.add("is-correct");
+        multiQuizFeedback.textContent = question.success;
+        multiQuizFeedback.classList.add("is-success");
+        speak(question.success);
+        playChimeSound();
+        Array.from(multiAnswerGrid.children).forEach((child) => {
+          child.disabled = true;
+        });
+        window.setTimeout(() => {
+          if (currentMultiQuestion < activity.questions.length - 1) {
+            currentMultiQuestion += 1;
+            renderMultiQuizQuestion(activity);
+          } else {
+            multiQuizProgress.textContent = "Test terminado";
+            multiQuizFeedback.textContent = "Muy bien. Has terminado el test.";
+            speak("Muy bien. Has terminado el test.");
+          }
+        }, 900);
+        return;
+      }
+
+      button.classList.add("is-wrong");
+      multiQuizFeedback.textContent = question.retry;
+      multiQuizFeedback.classList.add("is-retry");
+      speak(question.retry);
+    });
+    multiAnswerGrid.appendChild(button);
+  });
+}
+
+function renderMultiQuiz(activity) {
+  currentMultiQuestion = 0;
+  renderMultiQuizQuestion(activity);
+}
+
+function clearCharacteristicSelection() {
+  if (selectedCharacteristic) {
+    selectedCharacteristic.classList.remove("is-selected");
+    selectedCharacteristic = null;
+  }
+}
+
+function updateCharacteristicCompletion(card) {
+  const totalMatches = Number(card.dataset.totalMatches);
+  const foundMatches = Number(card.dataset.foundMatches);
+  if (foundMatches < totalMatches) return;
+
+  card.disabled = true;
+  card.classList.remove("is-selected");
+  card.classList.add("is-used");
+  selectedCharacteristic = null;
+  completedCharacteristics += 1;
+
+  if (completedCharacteristics === characterTray.children.length) {
+    characterMatchStatus.textContent = "Muy bien. Has completado todos los personajes.";
+    speak("Muy bien. Has completado todos los personajes.");
+  }
+}
+
+function tryMatchCharacteristic(target, card) {
+  if (!target || !card || card.disabled) return;
+
+  const characterKey = target.dataset.character;
+  const matches = card.dataset.matches.split(",");
+  if (!matches.includes(characterKey)) {
+    characterMatchStatus.textContent = "Esa característica no corresponde a este personaje.";
+    speak("Prueba con otro personaje.");
+    return;
+  }
+
+  const found = new Set(card.dataset.found ? card.dataset.found.split(",") : []);
+  if (found.has(characterKey)) {
+    characterMatchStatus.textContent = "Esa característica ya está puesta en este personaje.";
+    return;
+  }
+
+  found.add(characterKey);
+  card.dataset.found = Array.from(found).join(",");
+  card.dataset.foundMatches = String(found.size);
+
+  const label = document.createElement("span");
+  label.className = "character-label";
+  label.textContent = card.dataset.text;
+  target.querySelector(".character-labels").appendChild(label);
+
+  playChimeSound();
+  speak(card.dataset.text);
+  characterMatchStatus.textContent =
+    found.size === matches.length
+      ? "Muy bien. Has colocado esa característica en todos sus personajes."
+      : "Muy bien. Esta característica sirve para más personajes.";
+
+  updateCharacteristicCompletion(card);
+}
+
+function renderCharacterMatch(activity) {
+  selectedCharacteristic = null;
+  completedCharacteristics = 0;
+  characterTargets.replaceChildren();
+  characterTray.replaceChildren();
+  characterMatchStatus.textContent = "Toca una tarjeta y despues el personaje correcto.";
+
+  activity.characters.forEach((character) => {
+    const target = document.createElement("button");
+    target.className = "character-target";
+    target.type = "button";
+    target.dataset.character = character.key;
+    target.innerHTML = `<img src="${character.image}" alt=""><strong>${character.name}</strong><span class="character-labels"></span>`;
+    target.addEventListener("dragover", (event) => event.preventDefault());
+    target.addEventListener("drop", (event) => {
+      event.preventDefault();
+      const id = event.dataTransfer.getData("text/plain");
+      const card = characterTray.querySelector(`[data-id="${id}"]`);
+      tryMatchCharacteristic(target, card);
+    });
+    target.addEventListener("click", () => tryMatchCharacteristic(target, selectedCharacteristic));
+    characterTargets.appendChild(target);
+  });
+
+  shuffle(activity.characteristicCards).forEach((item) => {
+    const card = document.createElement("button");
+    card.className = "character-card";
+    card.type = "button";
+    card.draggable = true;
+    card.dataset.id = item.id;
+    card.dataset.text = item.text;
+    card.dataset.matches = item.matches.join(",");
+    card.dataset.totalMatches = String(item.matches.length);
+    card.dataset.foundMatches = "0";
+    card.textContent = item.text;
+    card.addEventListener("dragstart", (event) => {
+      event.dataTransfer.setData("text/plain", item.id);
+    });
+    card.addEventListener("click", () => {
+      if (card.disabled) return;
+      clearCharacteristicSelection();
+      selectedCharacteristic = card;
+      card.classList.add("is-selected");
+      characterMatchStatus.textContent = `Ahora toca el personaje: ${item.text}.`;
+      speak(item.text);
+    });
+    characterTray.appendChild(card);
+  });
+}
+
 function setMode(activity) {
   const isQuiz = activity.kind === "quiz";
   const isWorksheet = activity.kind === "worksheet";
   const isMemory = activity.kind === "memory";
   const isBits = activity.kind === "bits";
   const isAssociation = activity.kind === "association";
+  const isMagicBox = activity.kind === "magic-box";
+  const isMultiQuiz = activity.kind === "multi-quiz";
+  const isCharacterMatch = activity.kind === "character-match";
   quizCard.hidden = !isQuiz;
   worksheetCard.hidden = !isWorksheet;
   audioCard.hidden = !isMemory;
   memoryCard.hidden = !isMemory;
   bitsCard.hidden = !isBits;
   associationCard.hidden = !isAssociation;
+  magicBoxCard.hidden = !isMagicBox;
+  multiQuizCard.hidden = !isMultiQuiz;
+  characterMatchCard.hidden = !isCharacterMatch;
   createZone.hidden = !isQuiz;
   resetQuizButton.hidden = !isQuiz;
   downloadSheetButton.hidden = !isWorksheet;
   resetMemoryButton.hidden = !isMemory;
   resetBitsButton.hidden = !isBits;
   resetAssociationButton.hidden = !isAssociation;
+  resetMagicBoxButton.hidden = !isMagicBox;
+  resetMultiQuizButton.hidden = !isMultiQuiz;
+  resetCharacterMatchButton.hidden = !isCharacterMatch;
 
   if (isQuiz) {
     renderQuiz(activity);
@@ -631,6 +1036,18 @@ function setMode(activity) {
     quizFeedback.textContent = "";
   } else if (isAssociation) {
     renderAssociation(activity);
+    answerGrid.replaceChildren();
+    quizFeedback.textContent = "";
+  } else if (isMagicBox) {
+    renderMagicBox(activity);
+    answerGrid.replaceChildren();
+    quizFeedback.textContent = "";
+  } else if (isMultiQuiz) {
+    renderMultiQuiz(activity);
+    answerGrid.replaceChildren();
+    quizFeedback.textContent = "";
+  } else if (isCharacterMatch) {
+    renderCharacterMatch(activity);
     answerGrid.replaceChildren();
     quizFeedback.textContent = "";
   } else {
@@ -769,8 +1186,11 @@ function downloadWorksheet() {
   image.src = worksheetImagePath;
 }
 
-tiles.forEach((tile) => {
-  tile.addEventListener("click", () => openActivity(tile.dataset.open, true));
+document.addEventListener("click", (event) => {
+  const tile = event.target.closest("[data-open]");
+  if (!tile) return;
+  event.preventDefault();
+  openActivity(tile.dataset.open, true);
 });
 
 weekButtons.forEach((button) => {
@@ -799,13 +1219,39 @@ resetAssociationButton.addEventListener("click", () => {
   if (activity.kind === "association") renderAssociation(activity);
 });
 
+resetMagicBoxButton.addEventListener("click", () => {
+  const activity = activities[currentIndex];
+  if (activity.kind === "magic-box") renderMagicBox(activity);
+});
+
+resetMultiQuizButton.addEventListener("click", () => {
+  const activity = activities[currentIndex];
+  if (activity.kind === "multi-quiz") renderMultiQuiz(activity);
+});
+
+resetCharacterMatchButton.addEventListener("click", () => {
+  const activity = activities[currentIndex];
+  if (activity.kind === "character-match") renderCharacterMatch(activity);
+});
+
+magicBoxDropzone.addEventListener("dragover", (event) => event.preventDefault());
+
+magicBoxDropzone.addEventListener("drop", (event) => {
+  event.preventDefault();
+  const key = event.dataTransfer.getData("text/plain");
+  const card = magicWordTray.querySelector(`[data-key="${key}"]`);
+  tryAddMagicWord(card);
+});
+
+magicBoxDropzone.addEventListener("click", () => tryAddMagicWord(selectedMagicBit));
+
 speakActivityButton.addEventListener("click", () => {
   speak(activitySpeech(activities[currentIndex]));
 });
 
 speakPageButton.addEventListener("click", () => {
   const title = document.querySelector("h1").textContent;
-  const lead = document.querySelector(".lead").textContent;
+  const lead = document.querySelector(".lead")?.textContent || "";
   const activity = activities[currentIndex];
   speak(`${title}. ${lead}. ${activitySpeech(activity)}`);
 });

@@ -161,6 +161,29 @@ h1 {
   overflow-wrap: balance;
 }
 
+.poem-title {
+  display: grid;
+  gap: 10px;
+  max-width: none;
+  line-height: 1;
+}
+
+.poem-title-label {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 900;
+}
+
+.poem-title-name {
+  font-size: clamp(4.5rem, 13vw, 8.6rem);
+  font-weight: 900;
+}
+
+.poem-title-author {
+  font-size: clamp(1.25rem, 2.3vw, 2rem);
+  font-weight: 500;
+  text-align: center;
+}
+
 h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   overflow-wrap: balance;
@@ -352,7 +375,10 @@ h2 {
 .audio-card,
 .memory-card,
 .bits-card,
-.association-card {
+.association-card,
+.magic-box-card,
+.multi-quiz-card,
+.character-match-card {
   display: grid;
   gap: 12px;
   padding: clamp(14px, 3vw, 22px);
@@ -601,6 +627,275 @@ h2 {
   color: var(--ink);
   font-size: clamp(1.1rem, 1.8vw, 1.35rem);
   font-weight: 900;
+}
+
+.magic-box-status {
+  min-height: 1.6em;
+  color: var(--ink);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-weight: 900;
+}
+
+.magic-box-workspace {
+  display: grid;
+  grid-template-columns: minmax(240px, 42%) minmax(0, 1fr);
+  gap: clamp(14px, 3vw, 24px);
+  align-items: start;
+}
+
+.magic-box-dropzone {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  padding: 0;
+  border: 4px solid var(--ink);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 0 rgba(17, 52, 58, .14);
+}
+
+.magic-box-dropzone img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.magic-box-words {
+  position: absolute;
+  inset: 12% 8% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.magic-box-word {
+  display: inline-grid;
+  place-items: center;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff8df;
+  font-size: clamp(.78rem, 1.4vw, 1rem);
+  font-weight: 900;
+  box-shadow: 0 4px 0 rgba(17, 52, 58, .18);
+}
+
+.magic-word-tray {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.magic-bit-card {
+  display: grid;
+  gap: 4px;
+  min-height: 70px;
+  padding: 10px 12px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--sun);
+  box-shadow: 0 6px 0 rgba(17, 52, 58, .18);
+  font-weight: 900;
+  line-height: 1.05;
+  cursor: grab;
+}
+
+.magic-bit-card span:first-child {
+  font-size: clamp(.96rem, 1.7vw, 1.22rem);
+}
+
+.magic-bit-card span:last-child {
+  font-size: clamp(.9rem, 1.5vw, 1.05rem);
+}
+
+.magic-bit-card.is-selected {
+  outline: 5px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.magic-bit-card.is-used {
+  opacity: .45;
+  cursor: default;
+  box-shadow: none;
+}
+
+.multi-quiz-card {
+  background: #eef9f7;
+}
+
+.multi-quiz-visual {
+  display: grid;
+  place-items: center;
+  min-height: 150px;
+  padding: 12px;
+  border: 3px solid rgba(17, 52, 58, .18);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.multi-quiz-visual img {
+  display: block;
+  max-width: min(100%, 260px);
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.multi-quiz-question {
+  color: var(--ink) !important;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem) !important;
+  font-weight: 900;
+}
+
+.multi-answer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.multi-answer-button {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  min-height: 134px;
+  padding: 12px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  box-shadow: 0 7px 0 rgba(17, 52, 58, .14);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.multi-answer-button img {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border: 2px solid rgba(17, 52, 58, .22);
+  border-radius: 6px;
+}
+
+.multi-answer-button span {
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  text-align: center;
+}
+
+.multi-answer-button.is-correct {
+  background: #bce8c5;
+}
+
+.multi-answer-button.is-wrong {
+  background: #ffd0c7;
+}
+
+.multi-answer-button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.character-match-card {
+  background: #fff8df;
+}
+
+.character-match-status {
+  min-height: 1.6em;
+  color: var(--ink);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-weight: 900;
+}
+
+.character-targets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.character-target {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-height: 300px;
+  padding: 12px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  box-shadow: 0 7px 0 rgba(17, 52, 58, .12);
+  cursor: pointer;
+}
+
+.character-target img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border: 2px solid rgba(17, 52, 58, .22);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.character-target strong {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+}
+
+.character-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.character-label {
+  display: inline-grid;
+  place-items: center;
+  min-height: 30px;
+  padding: 5px 8px;
+  border: 2px solid var(--leaf);
+  border-radius: 8px;
+  background: #bce8c5;
+  font-size: .88rem;
+  font-weight: 900;
+}
+
+.character-tray {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.character-card {
+  min-height: 72px;
+  padding: 12px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--sun);
+  box-shadow: 0 6px 0 rgba(17, 52, 58, .18);
+  font-size: clamp(1rem, 1.7vw, 1.22rem);
+  font-weight: 900;
+  line-height: 1.12;
+  cursor: grab;
+}
+
+.character-card.is-selected {
+  outline: 5px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.character-card.is-used {
+  opacity: .45;
+  cursor: default;
+  box-shadow: none;
 }
 
 .association-grid {
@@ -897,6 +1192,14 @@ textarea {
     font-size: clamp(2.25rem, 14vw, 3.35rem);
   }
 
+  .poem-title-name {
+    font-size: clamp(4rem, 21vw, 5.8rem);
+  }
+
+  .poem-title-author {
+    text-align: center;
+  }
+
   h2 {
     font-size: clamp(1.85rem, 10vw, 2.6rem);
   }
@@ -943,7 +1246,10 @@ textarea {
   .audio-card,
   .memory-card,
   .bits-card,
-  .association-card {
+  .association-card,
+  .magic-box-card,
+  .multi-quiz-card,
+  .character-match-card {
     padding: 12px;
   }
 
@@ -984,6 +1290,69 @@ textarea {
   .association-target {
     min-height: 142px;
     padding: 8px;
+  }
+
+  .magic-box-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .magic-box-dropzone,
+  .magic-box-dropzone img {
+    min-height: 240px;
+  }
+
+  .magic-word-tray {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .magic-bit-card {
+    padding: 8px 6px;
+  }
+
+  .magic-bit-card span:first-child {
+    font-size: .88rem;
+  }
+
+  .magic-bit-card span:last-child {
+    font-size: .8rem;
+  }
+
+  .multi-answer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .multi-answer-button {
+    min-height: 96px;
+    grid-template-columns: 96px minmax(0, 1fr);
+    justify-items: start;
+  }
+
+  .multi-answer-button img {
+    max-width: 96px;
+  }
+
+  .character-targets {
+    grid-template-columns: 1fr;
+  }
+
+  .character-target {
+    min-height: 0;
+    grid-template-columns: 96px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .character-target img {
+    grid-row: span 2;
+  }
+
+  .character-tray {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .character-card {
+    min-height: 60px;
   }
 
   .word-tray {

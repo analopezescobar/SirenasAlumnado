@@ -26,9 +26,11 @@
   <main id="inicio">
     <section class="stage" aria-labelledby="main-title">
       <div class="stage-copy">
-        <p class="kicker">Semana 1</p>
-        <h1 id="main-title">Conocemos a Coco</h1>
-        <p class="lead" data-readable>Leemos una carta, escuchamos a Coco y elegimos la respuesta correcta.</p>
+        <h1 class="poem-title" id="main-title">
+          <span class="poem-title-label">Poema:</span>
+          <span class="poem-title-name">Sirenas</span>
+          <span class="poem-title-author">(Ángel González)</span>
+        </h1>
         <div class="choice-row" aria-label="Elegir actividad">
           <button class="primary-action" type="button" data-open="semana-1-carta-coco">Empezar</button>
           <a class="secondary-action" href="../index.html">Proyecto completo</a>
@@ -65,6 +67,18 @@
       <button class="activity-tile" type="button" data-week="2" data-open="semana-2-palabras-imagenes" hidden>
         <img src="assets/bits-cut/sirena.jpg" alt="" loading="lazy" decoding="async">
         <span>Palabras e imagenes</span>
+      </button>
+      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-caja-palabras-magicas" hidden>
+        <img src="assets/ui/caja-magica.jpg" alt="" loading="lazy" decoding="async">
+        <span>Caja de palabras magicas</span>
+      </button>
+      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-test-poesia-grecia" hidden>
+        <img src="assets/ui/lira.jpg" alt="" loading="lazy" decoding="async">
+        <span>Test de poesia</span>
+      </button>
+      <button class="activity-tile" type="button" data-week="2" data-open="semana-2-personajes-caracteristicas" hidden>
+        <img src="assets/bits-cut/triton.jpg" alt="" loading="lazy" decoding="async">
+        <span>Personajes y caracteristicas</span>
       </button>
     </section>
 
@@ -123,6 +137,30 @@
           <div class="association-status" data-association-status aria-live="polite">Arrastra una palabra a su imagen.</div>
           <div class="association-grid" data-association-grid></div>
         </div>
+        <div class="magic-box-card" data-magic-box-card hidden>
+          <p class="quiz-question">La caja de palabras magicas</p>
+          <div class="magic-box-status" data-magic-box-status aria-live="polite">Arrastra dentro de la caja las palabras que salen en el poema.</div>
+          <div class="magic-box-workspace">
+            <button class="magic-box-dropzone" type="button" data-magic-box-dropzone aria-label="Caja magica para guardar palabras del poema">
+              <img src="assets/ui/caja-magica.jpg" alt="">
+              <span class="magic-box-words" data-magic-box-words></span>
+            </button>
+            <div class="magic-word-tray" data-magic-word-tray aria-label="Bits de lectura"></div>
+          </div>
+        </div>
+        <div class="multi-quiz-card" data-multi-quiz-card hidden>
+          <p class="quiz-question" data-multi-quiz-progress>Pregunta 1 de 3</p>
+          <div class="multi-quiz-visual" data-multi-quiz-visual></div>
+          <p class="multi-quiz-question" data-multi-quiz-question></p>
+          <div class="multi-answer-grid" data-multi-answer-grid></div>
+          <p class="quiz-feedback" data-multi-quiz-feedback aria-live="polite"></p>
+        </div>
+        <div class="character-match-card" data-character-match-card hidden>
+          <p class="quiz-question">Empareja cada personaje con sus caracteristicas</p>
+          <div class="character-match-status" data-character-match-status aria-live="polite">Toca una tarjeta y despues el personaje correcto.</div>
+          <div class="character-targets" data-character-targets></div>
+          <div class="character-tray" data-character-tray aria-label="Caracteristicas de los personajes"></div>
+        </div>
         <div class="panel-actions">
           <button class="primary-action" type="button" data-speak-activity>Escuchar</button>
           <button class="secondary-action" type="button" data-reset-quiz>Repetir pregunta</button>
@@ -130,6 +168,9 @@
           <button class="secondary-action" type="button" data-reset-memory hidden>Reiniciar juego</button>
           <button class="secondary-action" type="button" data-reset-bits hidden>Reiniciar bits</button>
           <button class="secondary-action" type="button" data-reset-association hidden>Reiniciar parejas</button>
+          <button class="secondary-action" type="button" data-reset-magic-box hidden>Reiniciar caja</button>
+          <button class="secondary-action" type="button" data-reset-multi-quiz hidden>Reiniciar test</button>
+          <button class="secondary-action" type="button" data-reset-character-match hidden>Reiniciar personajes</button>
         </div>
       </div>
     </section>
