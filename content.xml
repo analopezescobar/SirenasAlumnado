@@ -10,11 +10,11 @@
 <odeResources>
   <odeResource>
     <key>odeId</key>
-    <value>202605102331465N0OEC</value>
+    <value>20260513215056WAL15K</value>
   </odeResource>
   <odeResource>
     <key>odeVersionId</key>
-    <value>20260510233146CCUM3V</value>
+    <value>20260513215056VJSNF2</value>
   </odeResource>
   <odeResource>
     <key>exe_version</key>
@@ -62,7 +62,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeProperty>
   <odeProperty>
     <key>pp_modified</key>
-    <value>1778446902742</value>
+    <value>1778698533265</value>
   </odeProperty>
   <odeProperty>
     <key>pp_addExeLink</key>
@@ -95,7 +95,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
 </odeProperties>
 <odeNavStructures>
 <odeNavStructure>
-  <odePageId>page-mp09d8e8-7m6j2wj7d</odePageId>
+  <odePageId>page-mp4f6jsc-goi4kd2os</odePageId>
   <odeParentPageId></odeParentPageId>
   <pageName>1. Datos Generales del Proyecto</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
@@ -131,7 +131,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8e8-7m6j2wj7d</odePageId>
+      <odePageId>page-mp4f6jsc-goi4kd2os</odePageId>
       <odeBlockId>block-1778351620550-4fnt5g97x</odeBlockId>
       <blockName>eXlearning ABP SIRENAS</blockName>
       <iconName></iconName>
@@ -160,7 +160,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8e8-7m6j2wj7d</odePageId>
+          <odePageId>page-mp4f6jsc-goi4kd2os</odePageId>
           <odeBlockId>block-1778351620550-4fnt5g97x</odeBlockId>
           <odeIdeviceId>idevice-1778351620545-n6qlzg1t9</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -205,8 +205,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8ee-jgcvukw8s</odePageId>
-  <odeParentPageId>page-mp09d8e8-7m6j2wj7d</odeParentPageId>
+  <odePageId>page-mp4f6jsi-k7kq96jzm</odePageId>
+  <odeParentPageId>page-mp4f6jsc-goi4kd2os</odeParentPageId>
   <pageName>Áreas Globalizadas LOMLOE</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -241,7 +241,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8ee-jgcvukw8s</odePageId>
+      <odePageId>page-mp4f6jsi-k7kq96jzm</odePageId>
       <odeBlockId>block-1778352112044-nqbnahyxq</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -270,7 +270,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8ee-jgcvukw8s</odePageId>
+          <odePageId>page-mp4f6jsi-k7kq96jzm</odePageId>
           <odeBlockId>block-1778352112044-nqbnahyxq</odeBlockId>
           <odeIdeviceId>idevice-1778352112042-hkb4p49nk</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -302,7 +302,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8eg-4o2bf05kq</odePageId>
+  <odePageId>page-mp4f6jsr-ux9ojle8m</odePageId>
   <odeParentPageId></odeParentPageId>
   <pageName>2. Primera Quincena: Sirenas</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
@@ -338,7 +338,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8eg-4o2bf05kq</odePageId>
+      <odePageId>page-mp4f6jsr-ux9ojle8m</odePageId>
       <odeBlockId>block-1778360816569-cijv0b7cw</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -367,7 +367,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8eg-4o2bf05kq</odePageId>
+          <odePageId>page-mp4f6jsr-ux9ojle8m</odePageId>
           <odeBlockId>block-1778360816569-cijv0b7cw</odeBlockId>
           <odeIdeviceId>idevice-1778360816563-6e5aj46g1</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -409,8 +409,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8ej-ihj48pa9q</odePageId>
-  <odeParentPageId>page-mp09d8eg-4o2bf05kq</odeParentPageId>
+  <odePageId>page-mp4f6jsu-022bzelsb</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Situación de aprendizaje Inicial</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -445,7 +445,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8ej-ihj48pa9q</odePageId>
+      <odePageId>page-mp4f6jsu-022bzelsb</odePageId>
       <odeBlockId>block-1778352572257-dm0hxwtmt</odeBlockId>
       <blockName>Actividad motivadora: la caja misteriosa</blockName>
       <iconName></iconName>
@@ -474,7 +474,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8ej-ihj48pa9q</odePageId>
+          <odePageId>page-mp4f6jsu-022bzelsb</odePageId>
           <odeBlockId>block-1778352572257-dm0hxwtmt</odeBlockId>
           <odeIdeviceId>idevice-1778352572255-iucfbrqqi</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -532,8 +532,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8em-gnal6m9f5</odePageId>
-  <odeParentPageId>page-mp09d8eg-4o2bf05kq</odeParentPageId>
+  <odePageId>page-mp4f6jsy-mnrycflup</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Estructura de gamificación</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -568,7 +568,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8em-gnal6m9f5</odePageId>
+      <odePageId>page-mp4f6jsy-mnrycflup</odePageId>
       <odeBlockId>block-1778352830506-vpoimn370</odeBlockId>
       <blockName>Gamificación en CANVA: &quot;El camino de las sirenas&quot;</blockName>
       <iconName></iconName>
@@ -597,7 +597,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8em-gnal6m9f5</odePageId>
+          <odePageId>page-mp4f6jsy-mnrycflup</odePageId>
           <odeBlockId>block-1778352830506-vpoimn370</odeBlockId>
           <odeIdeviceId>idevice-1778352830505-2ink12wrl</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -643,8 +643,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8eo-hksa28ib1</odePageId>
-  <odeParentPageId>page-mp09d8eg-4o2bf05kq</odeParentPageId>
+  <odePageId>page-mp4f6jt1-tcollh79v</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Primera semana</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -679,7 +679,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8eo-hksa28ib1</odePageId>
+      <odePageId>page-mp4f6jt1-tcollh79v</odePageId>
       <odeBlockId>block-1778354468139-br0vaasxq</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -708,7 +708,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8eo-hksa28ib1</odePageId>
+          <odePageId>page-mp4f6jt1-tcollh79v</odePageId>
           <odeBlockId>block-1778354468139-br0vaasxq</odeBlockId>
           <odeIdeviceId>idevice-1778354468135-hvt55jkd8</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -745,8 +745,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8eq-u0wwn0wup</odePageId>
-  <odeParentPageId>page-mp09d8eo-hksa28ib1</odeParentPageId>
+  <odePageId>page-mp4f6jt5-u6uz1d5ne</odePageId>
+  <odeParentPageId>page-mp4f6jt1-tcollh79v</odeParentPageId>
   <pageName>DÍA 1 – LA CAJA MISTERIOSA</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -781,7 +781,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8eq-u0wwn0wup</odePageId>
+      <odePageId>page-mp4f6jt5-u6uz1d5ne</odePageId>
       <odeBlockId>block-1778353138389-acp8ap25d</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -810,7 +810,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8eq-u0wwn0wup</odePageId>
+          <odePageId>page-mp4f6jt5-u6uz1d5ne</odePageId>
           <odeBlockId>block-1778353138389-acp8ap25d</odeBlockId>
           <odeIdeviceId>idevice-1778353138386-dwengbzab</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -864,8 +864,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8es-ibany8y1c</odePageId>
-  <odeParentPageId>page-mp09d8eq-u0wwn0wup</odeParentPageId>
+  <odePageId>page-mp4f6jt8-o0lm55eau</odePageId>
+  <odeParentPageId>page-mp4f6jt5-u6uz1d5ne</odeParentPageId>
   <pageName>Actividad de asamblea</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -900,7 +900,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8es-ibany8y1c</odePageId>
+      <odePageId>page-mp4f6jt8-o0lm55eau</odePageId>
       <odeBlockId>block-1778441666754-1u2z3hcb7</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -929,7 +929,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8es-ibany8y1c</odePageId>
+          <odePageId>page-mp4f6jt8-o0lm55eau</odePageId>
           <odeBlockId>block-1778441666754-1u2z3hcb7</odeBlockId>
           <odeIdeviceId>idevice-1778441666753-5lw49pneg</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -966,8 +966,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8eu-xe1elsakv</odePageId>
-  <odeParentPageId>page-mp09d8eo-hksa28ib1</odeParentPageId>
+  <odePageId>page-mp4f6jtb-ps03tcpwk</odePageId>
+  <odeParentPageId>page-mp4f6jt1-tcollh79v</odeParentPageId>
   <pageName>DÍA 2 – ¿QUÉ SABEMOS SOBRE ESCRITURA?</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1002,7 +1002,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8eu-xe1elsakv</odePageId>
+      <odePageId>page-mp4f6jtb-ps03tcpwk</odePageId>
       <odeBlockId>block-1778353411793-xu17bn0mg</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -1031,7 +1031,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8eu-xe1elsakv</odePageId>
+          <odePageId>page-mp4f6jtb-ps03tcpwk</odePageId>
           <odeBlockId>block-1778353411793-xu17bn0mg</odeBlockId>
           <odeIdeviceId>idevice-1778353411791-7gshl93kp</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1076,8 +1076,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8ew-qmcdlffix</odePageId>
-  <odeParentPageId>page-mp09d8eu-xe1elsakv</odeParentPageId>
+  <odePageId>page-mp4f6jtd-ktrzfcmpy</odePageId>
+  <odeParentPageId>page-mp4f6jtb-ps03tcpwk</odeParentPageId>
   <pageName>Ficha para recogida de información</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1112,7 +1112,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8ew-qmcdlffix</odePageId>
+      <odePageId>page-mp4f6jtd-ktrzfcmpy</odePageId>
       <odeBlockId>block-1778439998578-mcfu3r70i</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -1141,7 +1141,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8ew-qmcdlffix</odePageId>
+          <odePageId>page-mp4f6jtd-ktrzfcmpy</odePageId>
           <odeBlockId>block-1778439998578-mcfu3r70i</odeBlockId>
           <odeIdeviceId>idevice-1778439998578-058z4e0t5</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -1178,8 +1178,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8ey-u6i0ykxfu</odePageId>
-  <odeParentPageId>page-mp09d8eo-hksa28ib1</odeParentPageId>
+  <odePageId>page-mp4f6jti-srrpsv1xa</odePageId>
+  <odeParentPageId>page-mp4f6jt1-tcollh79v</odeParentPageId>
   <pageName>DÍA 3 – PRIMER ENCUENTRO CON EL POEMA</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1214,7 +1214,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8ey-u6i0ykxfu</odePageId>
+      <odePageId>page-mp4f6jti-srrpsv1xa</odePageId>
       <odeBlockId>block-1778353566608-ngoz5zkpv</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -1243,7 +1243,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8ey-u6i0ykxfu</odePageId>
+          <odePageId>page-mp4f6jti-srrpsv1xa</odePageId>
           <odeBlockId>block-1778353566608-ngoz5zkpv</odeBlockId>
           <odeIdeviceId>idevice-1778353566606-ppey8piwc</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1293,8 +1293,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8f0-hi984uqi1</odePageId>
-  <odeParentPageId>page-mp09d8ey-u6i0ykxfu</odeParentPageId>
+  <odePageId>page-mp4f6jtl-7kb68lat5</odePageId>
+  <odeParentPageId>page-mp4f6jti-srrpsv1xa</odeParentPageId>
   <pageName>Poema sirenas</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1329,7 +1329,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8f0-hi984uqi1</odePageId>
+      <odePageId>page-mp4f6jtl-7kb68lat5</odePageId>
       <odeBlockId>block-1778439013424-x6l1xm6hr</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -1358,7 +1358,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8f0-hi984uqi1</odePageId>
+          <odePageId>page-mp4f6jtl-7kb68lat5</odePageId>
           <odeBlockId>block-1778439013424-x6l1xm6hr</odeBlockId>
           <odeIdeviceId>idevice-1778439013422-z62bm9koh</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -1367,13 +1367,13 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   <!-- Idevice content start -->
   
             <div class="imageGallery-IDevice">
-                <div class="imageGallery-body"><div id="imageContainer_0" class="imageContainer"> <a idevice-id="idevice-1778439013422-z62bm9koh" title="" href="{{context_path}}/content/resources/lectura poema.png" class="imageLink">  <div class="imageElement">   <img src="{{context_path}}/content/resources/lectura poema.png" height="128" width="128" title="" alt="" titlelink="" author="" authorlink="" license="" licenselink=""/>  </div> </a></div><div id="imageContainer_1" class="imageContainer"> <a idevice-id="idevice-1778439013422-z62bm9koh" title="" href="{{context_path}}/content/resources/1.png" class="imageLink">  <div class="imageElement">   <img src="{{context_path}}/content/resources/1.png" height="128" width="128" title="" alt="" titlelink="" author="" authorlink="" license="" licenselink=""/>  </div> </a></div>
+                <div class="imageGallery-body"><div id="imageContainer_0" class="imageContainer"> <a idevice-id="idevice-1778439013422-z62bm9koh" title="" href="blob:app://localhost/c4399f75-c5b6-4b3d-8cec-cfc28b3bfa54" class="imageLink">  <div class="imageElement">   <img src="" height="128" width="128" title="" alt="" titlelink="" author="" authorlink="" license="" licenselink=""/>  </div> </a></div><div id="imageContainer_1" class="imageContainer"> <a idevice-id="idevice-1778439013422-z62bm9koh" title="" href="{{context_path}}/content/resources/1.png" class="imageLink">  <div class="imageElement">   <img src="{{context_path}}/content/resources/1.png" height="128" width="128" title="" alt="" titlelink="" author="" authorlink="" license="" licenselink=""/>  </div> </a></div>
                 </div>
             </div>
   <!-- Idevice content end -->
 </div>
 <!-- Idevice Example template end -->]]></htmlView>
-          <jsonProperties><![CDATA[{"ideviceId":"idevice-1778439013422-z62bm9koh","img_0":{"img":"blob:app://localhost/c4399f75-c5b6-4b3d-8cec-cfc28b3bfa54","thumbnail":"blob:app://localhost/c4399f75-c5b6-4b3d-8cec-cfc28b3bfa54","title":"","linktitle":"","author":"","linkauthor":"","license":""},"img_2":{"img":"{{context_path}}/content/resources/1.png","thumbnail":"{{context_path}}/content/resources/1.png","title":"","linktitle":"","author":"","linkauthor":"","license":""}}]]></jsonProperties>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1778439013422-z62bm9koh","img_0":{"img":"blob:app://localhost/c4399f75-c5b6-4b3d-8cec-cfc28b3bfa54","thumbnail":"blob:app://localhost/c4399f75-c5b6-4b3d-8cec-cfc28b3bfa54","title":"","linktitle":"","author":"","linkauthor":"","license":""},"img_1":{"img":"blob:app://localhost/b7af7532-a84c-47e6-b2d7-73ff109c3c4b","thumbnail":"blob:app://localhost/b7af7532-a84c-47e6-b2d7-73ff109c3c4b","title":"","linktitle":"","author":"","linkauthor":"","license":""}}]]></jsonProperties>
           <odeComponentsOrder>0</odeComponentsOrder>
           <odeComponentsProperties>
             <odeComponentsProperty>
@@ -1395,8 +1395,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8f2-3b8ds0w3m</odePageId>
-  <odeParentPageId>page-mp09d8eo-hksa28ib1</odeParentPageId>
+  <odePageId>page-mp4f6jtn-t2i2slos8</odePageId>
+  <odeParentPageId>page-mp4f6jt1-tcollh79v</odeParentPageId>
   <pageName>DÍA 4 – BITS DE LECTURA EN ASAMBLEA</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1431,7 +1431,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8f2-3b8ds0w3m</odePageId>
+      <odePageId>page-mp4f6jtn-t2i2slos8</odePageId>
       <odeBlockId>block-1778353738074-c13e4ewi7</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -1460,7 +1460,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8f2-3b8ds0w3m</odePageId>
+          <odePageId>page-mp4f6jtn-t2i2slos8</odePageId>
           <odeBlockId>block-1778353738074-c13e4ewi7</odeBlockId>
           <odeIdeviceId>idevice-1778353738073-eaz17xjsf</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1505,8 +1505,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8f5-yfe1x3n2f</odePageId>
-  <odeParentPageId>page-mp09d8f2-3b8ds0w3m</odeParentPageId>
+  <odePageId>page-mp4f6jtq-mw2460vpy</odePageId>
+  <odeParentPageId>page-mp4f6jtn-t2i2slos8</odeParentPageId>
   <pageName>Panel de palabras del mar</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1541,7 +1541,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8f5-yfe1x3n2f</odePageId>
+      <odePageId>page-mp4f6jtq-mw2460vpy</odePageId>
       <odeBlockId>block-1778442222692-haiyugetn</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -1570,7 +1570,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8f5-yfe1x3n2f</odePageId>
+          <odePageId>page-mp4f6jtq-mw2460vpy</odePageId>
           <odeBlockId>block-1778442222692-haiyugetn</odeBlockId>
           <odeIdeviceId>idevice-1778442222688-wa5oo745c</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -1607,8 +1607,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8f7-e4y4ndof0</odePageId>
-  <odeParentPageId>page-mp09d8eo-hksa28ib1</odeParentPageId>
+  <odePageId>page-mp4f6jts-m3kw9xm4p</odePageId>
+  <odeParentPageId>page-mp4f6jt1-tcollh79v</odeParentPageId>
   <pageName>DÍA 5 – ESTACIONES DE APRENDIZAJE</pageName>
   <odeNavStructureOrder>4</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1643,7 +1643,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8f7-e4y4ndof0</odePageId>
+      <odePageId>page-mp4f6jts-m3kw9xm4p</odePageId>
       <odeBlockId>block-1778353877960-imp1ue1hn</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -1672,7 +1672,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8f7-e4y4ndof0</odePageId>
+          <odePageId>page-mp4f6jts-m3kw9xm4p</odePageId>
           <odeBlockId>block-1778353877960-imp1ue1hn</odeBlockId>
           <odeIdeviceId>idevice-1778353877958-otxetdp0t</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1717,8 +1717,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8f9-hmgrg9n5m</odePageId>
-  <odeParentPageId>page-mp09d8f7-e4y4ndof0</odeParentPageId>
+  <odePageId>page-mp4f6jtu-meau9cfuv</odePageId>
+  <odeParentPageId>page-mp4f6jts-m3kw9xm4p</odeParentPageId>
   <pageName>Estación 3</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1753,7 +1753,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8f9-hmgrg9n5m</odePageId>
+      <odePageId>page-mp4f6jtu-meau9cfuv</odePageId>
       <odeBlockId>block-1778439085961-kl0o4gzzi</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -1782,7 +1782,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8f9-hmgrg9n5m</odePageId>
+          <odePageId>page-mp4f6jtu-meau9cfuv</odePageId>
           <odeBlockId>block-1778439085961-kl0o4gzzi</odeBlockId>
           <odeIdeviceId>idevice-1778439085959-qq6zxrc7c</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -1819,10 +1819,10 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fa-bqz58873k</odePageId>
-  <odeParentPageId></odeParentPageId>
+  <odePageId>page-mp4f6jtx-e6sdr68vj</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Segunda semana</pageName>
-  <odeNavStructureOrder>2</odeNavStructureOrder>
+  <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -1855,7 +1855,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fa-bqz58873k</odePageId>
+      <odePageId>page-mp4f6jtx-e6sdr68vj</odePageId>
       <odeBlockId>block-1778354501847-q9evq68sl</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -1884,7 +1884,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fa-bqz58873k</odePageId>
+          <odePageId>page-mp4f6jtx-e6sdr68vj</odePageId>
           <odeBlockId>block-1778354501847-q9evq68sl</odeBlockId>
           <odeIdeviceId>idevice-1778354501845-c6ur5dyhd</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -1921,8 +1921,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fd-l6tuhn44i</odePageId>
-  <odeParentPageId>page-mp09d8fa-bqz58873k</odeParentPageId>
+  <odePageId>page-mp4f6ju0-999jg19o0</odePageId>
+  <odeParentPageId>page-mp4f6jtx-e6sdr68vj</odeParentPageId>
   <pageName>DÍA 6 – LAS PALABRAS DEL MAR</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1957,7 +1957,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fd-l6tuhn44i</odePageId>
+      <odePageId>page-mp4f6ju0-999jg19o0</odePageId>
       <odeBlockId>block-1778354690842-pn8m6704p</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -1986,7 +1986,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fd-l6tuhn44i</odePageId>
+          <odePageId>page-mp4f6ju0-999jg19o0</odePageId>
           <odeBlockId>block-1778354690842-pn8m6704p</odeBlockId>
           <odeIdeviceId>idevice-1778354690841-1u7u02psw</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2029,8 +2029,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fg-buz0xfnuo</odePageId>
-  <odeParentPageId>page-mp09d8fa-bqz58873k</odeParentPageId>
+  <odePageId>page-mp4f6ju2-owdgx606j</odePageId>
+  <odeParentPageId>page-mp4f6jtx-e6sdr68vj</odeParentPageId>
   <pageName>DÍA 7 – ¿QUÉ ES LA POESÍA?</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2065,7 +2065,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fg-buz0xfnuo</odePageId>
+      <odePageId>page-mp4f6ju2-owdgx606j</odePageId>
       <odeBlockId>block-1778355712271-yfpxucac6</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -2094,7 +2094,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fg-buz0xfnuo</odePageId>
+          <odePageId>page-mp4f6ju2-owdgx606j</odePageId>
           <odeBlockId>block-1778355712271-yfpxucac6</odeBlockId>
           <odeIdeviceId>idevice-1778355712269-1c1l70r9r</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2139,8 +2139,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fi-9p7lcv9zx</odePageId>
-  <odeParentPageId>page-mp09d8fg-buz0xfnuo</odeParentPageId>
+  <odePageId>page-mp4f6ju4-i9v73thzx</odePageId>
+  <odeParentPageId>page-mp4f6ju2-owdgx606j</odeParentPageId>
   <pageName>Ficha dossier</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2175,7 +2175,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fi-9p7lcv9zx</odePageId>
+      <odePageId>page-mp4f6ju4-i9v73thzx</odePageId>
       <odeBlockId>block-1778439150553-r54pj60gc</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -2204,7 +2204,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fi-9p7lcv9zx</odePageId>
+          <odePageId>page-mp4f6ju4-i9v73thzx</odePageId>
           <odeBlockId>block-1778439150553-r54pj60gc</odeBlockId>
           <odeIdeviceId>idevice-1778439150550-umdkh618f</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -2241,8 +2241,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fk-uw7zkx4v3</odePageId>
-  <odeParentPageId>page-mp09d8fa-bqz58873k</odeParentPageId>
+  <odePageId>page-mp4f6ju6-a1dv5fzrr</odePageId>
+  <odeParentPageId>page-mp4f6jtx-e6sdr68vj</odeParentPageId>
   <pageName>DÍA 8 – EL ORIGEN DE LA POESÍA</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2277,7 +2277,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fk-uw7zkx4v3</odePageId>
+      <odePageId>page-mp4f6ju6-a1dv5fzrr</odePageId>
       <odeBlockId>block-1778355883535-g4fsidnvy</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -2306,7 +2306,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fk-uw7zkx4v3</odePageId>
+          <odePageId>page-mp4f6ju6-a1dv5fzrr</odePageId>
           <odeBlockId>block-1778355883535-g4fsidnvy</odeBlockId>
           <odeIdeviceId>idevice-1778355883533-ppl4b4wmg</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2351,8 +2351,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fm-qzbvfy1p2</odePageId>
-  <odeParentPageId>page-mp09d8fk-uw7zkx4v3</odeParentPageId>
+  <odePageId>page-mp4f6ju9-tcgt2mhi5</odePageId>
+  <odeParentPageId>page-mp4f6ju6-a1dv5fzrr</odeParentPageId>
   <pageName>Ficha dossier</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2387,7 +2387,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fm-qzbvfy1p2</odePageId>
+      <odePageId>page-mp4f6ju9-tcgt2mhi5</odePageId>
       <odeBlockId>block-1778439212189-63thgjpx0</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -2416,7 +2416,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fm-qzbvfy1p2</odePageId>
+          <odePageId>page-mp4f6ju9-tcgt2mhi5</odePageId>
           <odeBlockId>block-1778439212189-63thgjpx0</odeBlockId>
           <odeIdeviceId>idevice-1778439212187-bposgxxha</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -2453,8 +2453,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fo-fkv3bmnni</odePageId>
-  <odeParentPageId>page-mp09d8fa-bqz58873k</odeParentPageId>
+  <odePageId>page-mp4f6jub-4qej2co8q</odePageId>
+  <odeParentPageId>page-mp4f6jtx-e6sdr68vj</odeParentPageId>
   <pageName>DÍA 9 – PERSONAJES DEL POEMA</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2489,7 +2489,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fo-fkv3bmnni</odePageId>
+      <odePageId>page-mp4f6jub-4qej2co8q</odePageId>
       <odeBlockId>block-1778356091848-5cws7va5v</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -2518,7 +2518,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fo-fkv3bmnni</odePageId>
+          <odePageId>page-mp4f6jub-4qej2co8q</odePageId>
           <odeBlockId>block-1778356091848-5cws7va5v</odeBlockId>
           <odeIdeviceId>idevice-1778356091846-r82stg9pg</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2564,8 +2564,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fq-l17mu4sr7</odePageId>
-  <odeParentPageId>page-mp09d8fo-fkv3bmnni</odeParentPageId>
+  <odePageId>page-mp4f6juf-9hvrp84at</odePageId>
+  <odeParentPageId>page-mp4f6jub-4qej2co8q</odeParentPageId>
   <pageName>Ficha dossier</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2600,7 +2600,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fq-l17mu4sr7</odePageId>
+      <odePageId>page-mp4f6juf-9hvrp84at</odePageId>
       <odeBlockId>block-1778439244699-rpvudvr5t</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -2629,7 +2629,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fq-l17mu4sr7</odePageId>
+          <odePageId>page-mp4f6juf-9hvrp84at</odePageId>
           <odeBlockId>block-1778439244699-rpvudvr5t</odeBlockId>
           <odeIdeviceId>idevice-1778439244697-xln5le338</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -2666,8 +2666,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fs-dxwm2kucu</odePageId>
-  <odeParentPageId>page-mp09d8fa-bqz58873k</odeParentPageId>
+  <odePageId>page-mp4f6juh-49u3v40pi</odePageId>
+  <odeParentPageId>page-mp4f6jtx-e6sdr68vj</odeParentPageId>
   <pageName>DÍA 10 - ESTACIONES DE APRENDIZAJE MARINAS</pageName>
   <odeNavStructureOrder>4</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2702,7 +2702,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fs-dxwm2kucu</odePageId>
+      <odePageId>page-mp4f6juh-49u3v40pi</odePageId>
       <odeBlockId>block-1778356231780-2m5k6ys68</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -2731,7 +2731,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fs-dxwm2kucu</odePageId>
+          <odePageId>page-mp4f6juh-49u3v40pi</odePageId>
           <odeBlockId>block-1778356231780-2m5k6ys68</odeBlockId>
           <odeIdeviceId>idevice-1778356231779-8i289d8qm</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2776,8 +2776,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8ft-3j8gx7z69</odePageId>
-  <odeParentPageId>page-mp09d8fs-dxwm2kucu</odeParentPageId>
+  <odePageId>page-mp4f6juj-9agsm62a3</odePageId>
+  <odeParentPageId>page-mp4f6juh-49u3v40pi</odeParentPageId>
   <pageName>Fichas para estaciones</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2812,7 +2812,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8ft-3j8gx7z69</odePageId>
+      <odePageId>page-mp4f6juj-9agsm62a3</odePageId>
       <odeBlockId>block-1778439286268-2tnzgr5wa</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -2841,7 +2841,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8ft-3j8gx7z69</odePageId>
+          <odePageId>page-mp4f6juj-9agsm62a3</odePageId>
           <odeBlockId>block-1778439286268-2tnzgr5wa</odeBlockId>
           <odeIdeviceId>idevice-1778439286266-76mliv890</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -2878,10 +2878,10 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fv-x144b63e7</odePageId>
-  <odeParentPageId></odeParentPageId>
+  <odePageId>page-mp4f6jum-hgcxyjhrm</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Tercera semana</pageName>
-  <odeNavStructureOrder>3</odeNavStructureOrder>
+  <odeNavStructureOrder>4</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -2914,7 +2914,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fv-x144b63e7</odePageId>
+      <odePageId>page-mp4f6jum-hgcxyjhrm</odePageId>
       <odeBlockId>block-1778354560848-x8u1ce757</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -2943,7 +2943,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fv-x144b63e7</odePageId>
+          <odePageId>page-mp4f6jum-hgcxyjhrm</odePageId>
           <odeBlockId>block-1778354560848-x8u1ce757</odeBlockId>
           <odeIdeviceId>idevice-1778354560847-t36spv8px</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -2980,8 +2980,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8fy-c5kqis595</odePageId>
-  <odeParentPageId>page-mp09d8fv-x144b63e7</odeParentPageId>
+  <odePageId>page-mp4f6juo-c0n6donbu</odePageId>
+  <odeParentPageId>page-mp4f6jum-hgcxyjhrm</odeParentPageId>
   <pageName>DÍA 11 – PODCAST DEL POEMA</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3016,7 +3016,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8fy-c5kqis595</odePageId>
+      <odePageId>page-mp4f6juo-c0n6donbu</odePageId>
       <odeBlockId>block-1778356500031-qkytl8b4w</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -3045,7 +3045,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8fy-c5kqis595</odePageId>
+          <odePageId>page-mp4f6juo-c0n6donbu</odePageId>
           <odeBlockId>block-1778356500031-qkytl8b4w</odeBlockId>
           <odeIdeviceId>idevice-1778356500030-lm641axc7</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3088,8 +3088,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8g0-ffsp1600x</odePageId>
-  <odeParentPageId>page-mp09d8fy-c5kqis595</odeParentPageId>
+  <odePageId>page-mp4f6juq-9quvjjofy</odePageId>
+  <odeParentPageId>page-mp4f6juo-c0n6donbu</odeParentPageId>
   <pageName>Podcast del poema</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3124,7 +3124,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8g0-ffsp1600x</odePageId>
+      <odePageId>page-mp4f6juq-9quvjjofy</odePageId>
       <odeBlockId>block-1778442959032-sp26ndw40</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -3153,7 +3153,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8g0-ffsp1600x</odePageId>
+          <odePageId>page-mp4f6juq-9quvjjofy</odePageId>
           <odeBlockId>block-1778442959032-sp26ndw40</odeBlockId>
           <odeIdeviceId>idevice-1778442959031-apxnf2ece</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -3190,8 +3190,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8g1-8q6lfwgaa</odePageId>
-  <odeParentPageId>page-mp09d8fv-x144b63e7</odeParentPageId>
+  <odePageId>page-mp4f6jus-f8na9pt9y</odePageId>
+  <odeParentPageId>page-mp4f6jum-hgcxyjhrm</odeParentPageId>
   <pageName>DÍA 12 – CONOCEMOS AL POETA</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3226,7 +3226,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8g1-8q6lfwgaa</odePageId>
+      <odePageId>page-mp4f6jus-f8na9pt9y</odePageId>
       <odeBlockId>block-1778356648834-pvudqe0ul</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -3255,7 +3255,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8g1-8q6lfwgaa</odePageId>
+          <odePageId>page-mp4f6jus-f8na9pt9y</odePageId>
           <odeBlockId>block-1778356648834-pvudqe0ul</odeBlockId>
           <odeIdeviceId>idevice-1778356648832-kj8j694ur</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3300,8 +3300,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8g3-cfxf8rorc</odePageId>
-  <odeParentPageId>page-mp09d8g1-8q6lfwgaa</odeParentPageId>
+  <odePageId>page-mp4f6juv-wpf3ilyk2</odePageId>
+  <odeParentPageId>page-mp4f6jus-f8na9pt9y</odeParentPageId>
   <pageName>Ficha para el podcast</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3336,7 +3336,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8g3-cfxf8rorc</odePageId>
+      <odePageId>page-mp4f6juv-wpf3ilyk2</odePageId>
       <odeBlockId>block-1778439347929-qrp3updaf</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -3365,7 +3365,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8g3-cfxf8rorc</odePageId>
+          <odePageId>page-mp4f6juv-wpf3ilyk2</odePageId>
           <odeBlockId>block-1778439347929-qrp3updaf</odeBlockId>
           <odeIdeviceId>idevice-1778439347928-veojfjt6c</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -3402,8 +3402,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8g5-4wb2pxzpw</odePageId>
-  <odeParentPageId>page-mp09d8fv-x144b63e7</odeParentPageId>
+  <odePageId>page-mp4f6juy-q5bk3usb5</odePageId>
+  <odeParentPageId>page-mp4f6jum-hgcxyjhrm</odeParentPageId>
   <pageName>DÍA 13 – GRAN RETO COOPERATIVO</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3438,7 +3438,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8g5-4wb2pxzpw</odePageId>
+      <odePageId>page-mp4f6juy-q5bk3usb5</odePageId>
       <odeBlockId>block-1778356879685-97nwmdevv</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -3467,7 +3467,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8g5-4wb2pxzpw</odePageId>
+          <odePageId>page-mp4f6juy-q5bk3usb5</odePageId>
           <odeBlockId>block-1778356879685-97nwmdevv</odeBlockId>
           <odeIdeviceId>idevice-1778356879682-vup6h5kri</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3509,8 +3509,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8g6-6y8rcrg9a</odePageId>
-  <odeParentPageId>page-mp09d8g5-4wb2pxzpw</odeParentPageId>
+  <odePageId>page-mp4f6jv0-y98rivw4r</odePageId>
+  <odeParentPageId>page-mp4f6juy-q5bk3usb5</odeParentPageId>
   <pageName>Fichas dossier</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3545,7 +3545,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8g6-6y8rcrg9a</odePageId>
+      <odePageId>page-mp4f6jv0-y98rivw4r</odePageId>
       <odeBlockId>block-1778439394522-ps9vesbo9</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -3574,7 +3574,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8g6-6y8rcrg9a</odePageId>
+          <odePageId>page-mp4f6jv0-y98rivw4r</odePageId>
           <odeBlockId>block-1778439394522-ps9vesbo9</odeBlockId>
           <odeIdeviceId>idevice-1778439394521-8gthojyb8</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -3611,8 +3611,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8g8-mmpyt8es9</odePageId>
-  <odeParentPageId>page-mp09d8fv-x144b63e7</odeParentPageId>
+  <odePageId>page-mp4f6jv3-z91487ej0</odePageId>
+  <odeParentPageId>page-mp4f6jum-hgcxyjhrm</odeParentPageId>
   <pageName>DÍA 14 – CIERRE DE LA QUINCENA</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3647,7 +3647,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8g8-mmpyt8es9</odePageId>
+      <odePageId>page-mp4f6jv3-z91487ej0</odePageId>
       <odeBlockId>block-1778357023578-mpxx4nqae</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -3676,7 +3676,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8g8-mmpyt8es9</odePageId>
+          <odePageId>page-mp4f6jv3-z91487ej0</odePageId>
           <odeBlockId>block-1778357023578-mpxx4nqae</odeBlockId>
           <odeIdeviceId>idevice-1778357023577-60c3tivul</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3720,8 +3720,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8ga-32in2f1cg</odePageId>
-  <odeParentPageId>page-mp09d8g8-mmpyt8es9</odeParentPageId>
+  <odePageId>page-mp4f6jv5-tk5v5rp74</odePageId>
+  <odeParentPageId>page-mp4f6jv3-z91487ej0</odeParentPageId>
   <pageName>Ficha recogida información</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3756,7 +3756,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8ga-32in2f1cg</odePageId>
+      <odePageId>page-mp4f6jv5-tk5v5rp74</odePageId>
       <odeBlockId>block-1778440061893-hjf48pz4o</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -3785,7 +3785,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8ga-32in2f1cg</odePageId>
+          <odePageId>page-mp4f6jv5-tk5v5rp74</odePageId>
           <odeBlockId>block-1778440061893-hjf48pz4o</odeBlockId>
           <odeIdeviceId>idevice-1778440061892-a743r9fs6</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -3822,8 +3822,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gb-fenaqyn6n</odePageId>
-  <odeParentPageId>page-mp09d8fv-x144b63e7</odeParentPageId>
+  <odePageId>page-mp4f6jv7-i92jsq6gn</odePageId>
+  <odeParentPageId>page-mp4f6jum-hgcxyjhrm</odeParentPageId>
   <pageName>DÍA 15 - GRUPOS INTERACTIVOS CON FAMILIAS</pageName>
   <odeNavStructureOrder>4</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3858,7 +3858,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gb-fenaqyn6n</odePageId>
+      <odePageId>page-mp4f6jv7-i92jsq6gn</odePageId>
       <odeBlockId>block-1778357500811-tcy03kbeg</odeBlockId>
       <blockName>GRUPOS INTERACTIVOS CON FAMILIAS</blockName>
       <iconName></iconName>
@@ -3887,7 +3887,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gb-fenaqyn6n</odePageId>
+          <odePageId>page-mp4f6jv7-i92jsq6gn</odePageId>
           <odeBlockId>block-1778357500811-tcy03kbeg</odeBlockId>
           <odeIdeviceId>idevice-1778357500809-ebr3r0ysm</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3946,10 +3946,10 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gd-t3l2rypuk</odePageId>
-  <odeParentPageId></odeParentPageId>
+  <odePageId>page-mp4f6jv9-bq5m5d3y6</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Podcast del proyecto</pageName>
-  <odeNavStructureOrder>4</odeNavStructureOrder>
+  <odeNavStructureOrder>5</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -3982,7 +3982,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gd-t3l2rypuk</odePageId>
+      <odePageId>page-mp4f6jv9-bq5m5d3y6</odePageId>
       <odeBlockId>block-1778357835764-fkhvk2a9f</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4011,7 +4011,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gd-t3l2rypuk</odePageId>
+          <odePageId>page-mp4f6jv9-bq5m5d3y6</odePageId>
           <odeBlockId>block-1778357835764-fkhvk2a9f</odeBlockId>
           <odeIdeviceId>idevice-1778357835761-7t3isbrkm</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4040,8 +4040,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gf-y88obd92j</odePageId>
-  <odeParentPageId>page-mp09d8gd-t3l2rypuk</odeParentPageId>
+  <odePageId>page-mp4f6jvc-4aut0m93a</odePageId>
+  <odeParentPageId>page-mp4f6jv9-bq5m5d3y6</odeParentPageId>
   <pageName>PODCAST 1 – «RECITAMOS SIRENAS»</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4076,7 +4076,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gf-y88obd92j</odePageId>
+      <odePageId>page-mp4f6jvc-4aut0m93a</odePageId>
       <odeBlockId>block-1778357895839-qsyjq2wqx</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4105,7 +4105,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gf-y88obd92j</odePageId>
+          <odePageId>page-mp4f6jvc-4aut0m93a</odePageId>
           <odeBlockId>block-1778357895839-qsyjq2wqx</odeBlockId>
           <odeIdeviceId>idevice-1778357895838-t9wr5updt</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4147,8 +4147,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gh-mbecnq4nl</odePageId>
-  <odeParentPageId>page-mp09d8gd-t3l2rypuk</odeParentPageId>
+  <odePageId>page-mp4f6jvf-uhz3dreny</odePageId>
+  <odeParentPageId>page-mp4f6jv9-bq5m5d3y6</odeParentPageId>
   <pageName>PODCAST 2 – «CONOCEMOS A ÁNGEL GONZÁLEZ»</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4183,7 +4183,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gh-mbecnq4nl</odePageId>
+      <odePageId>page-mp4f6jvf-uhz3dreny</odePageId>
       <odeBlockId>block-1778357984085-wgaz71bxr</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4212,7 +4212,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gh-mbecnq4nl</odePageId>
+          <odePageId>page-mp4f6jvf-uhz3dreny</odePageId>
           <odeBlockId>block-1778357984085-wgaz71bxr</odeBlockId>
           <odeIdeviceId>idevice-1778357984083-9n2o8vh4h</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4254,10 +4254,10 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gj-ujt4sniev</odePageId>
-  <odeParentPageId></odeParentPageId>
+  <odePageId>page-mp4f6jvh-fntlizr54</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Evaluación</pageName>
-  <odeNavStructureOrder>5</odeNavStructureOrder>
+  <odeNavStructureOrder>6</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -4290,7 +4290,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gj-ujt4sniev</odePageId>
+      <odePageId>page-mp4f6jvh-fntlizr54</odePageId>
       <odeBlockId>block-1778355327213-n6esn7x3c</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4319,7 +4319,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gj-ujt4sniev</odePageId>
+          <odePageId>page-mp4f6jvh-fntlizr54</odePageId>
           <odeBlockId>block-1778355327213-n6esn7x3c</odeBlockId>
           <odeIdeviceId>idevice-1778355327210-5c3f54lpa</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4371,10 +4371,10 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gl-zky9yf1y0</odePageId>
-  <odeParentPageId></odeParentPageId>
+  <odePageId>page-mp4f6jvj-j1ugk4gys</odePageId>
+  <odeParentPageId>page-mp4f6jvh-fntlizr54</odeParentPageId>
   <pageName>Rúbricas</pageName>
-  <odeNavStructureOrder>6</odeNavStructureOrder>
+  <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -4407,7 +4407,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gl-zky9yf1y0</odePageId>
+      <odePageId>page-mp4f6jvj-j1ugk4gys</odePageId>
       <odeBlockId>block-1778360312876-zaq0hvjea</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4436,7 +4436,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gl-zky9yf1y0</odePageId>
+          <odePageId>page-mp4f6jvj-j1ugk4gys</odePageId>
           <odeBlockId>block-1778360312876-zaq0hvjea</odeBlockId>
           <odeIdeviceId>idevice-1778360312874-mynbk4u8d</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4474,8 +4474,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gm-72fwpmuvh</odePageId>
-  <odeParentPageId>page-mp09d8gl-zky9yf1y0</odeParentPageId>
+  <odePageId>page-mp4f6jvl-qbiha8r1r</odePageId>
+  <odeParentPageId>page-mp4f6jvj-j1ugk4gys</odeParentPageId>
   <pageName>RUBRICA QUINCENA</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4510,7 +4510,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gm-72fwpmuvh</odePageId>
+      <odePageId>page-mp4f6jvl-qbiha8r1r</odePageId>
       <odeBlockId>block-1778360040789-s04vbbou9</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4539,7 +4539,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gm-72fwpmuvh</odePageId>
+          <odePageId>page-mp4f6jvl-qbiha8r1r</odePageId>
           <odeBlockId>block-1778360040789-s04vbbou9</odeBlockId>
           <odeIdeviceId>idevice-1778360040778-qlpnv31w8</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4568,8 +4568,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8go-iq7lz5j7n</odePageId>
-  <odeParentPageId>page-mp09d8gl-zky9yf1y0</odeParentPageId>
+  <odePageId>page-mp4f6jvn-j19rybhhh</odePageId>
+  <odeParentPageId>page-mp4f6jvj-j1ugk4gys</odeParentPageId>
   <pageName>RUBRICA SEMANAL</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4604,7 +4604,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8go-iq7lz5j7n</odePageId>
+      <odePageId>page-mp4f6jvn-j19rybhhh</odePageId>
       <odeBlockId>block-1778360092839-lmz49zf15</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4633,7 +4633,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8go-iq7lz5j7n</odePageId>
+          <odePageId>page-mp4f6jvn-j19rybhhh</odePageId>
           <odeBlockId>block-1778360092839-lmz49zf15</odeBlockId>
           <odeIdeviceId>idevice-1778360092838-4dy47vb2m</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4662,8 +4662,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gp-jrrxkb7f4</odePageId>
-  <odeParentPageId>page-mp09d8gl-zky9yf1y0</odeParentPageId>
+  <odePageId>page-mp4f6jvp-7cldp1o39</odePageId>
+  <odeParentPageId>page-mp4f6jvj-j1ugk4gys</odeParentPageId>
   <pageName>LIBRO DE PROYECTO</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4698,7 +4698,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gp-jrrxkb7f4</odePageId>
+      <odePageId>page-mp4f6jvp-7cldp1o39</odePageId>
       <odeBlockId>block-1778360151092-fiwm1mu7a</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4727,7 +4727,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gp-jrrxkb7f4</odePageId>
+          <odePageId>page-mp4f6jvp-7cldp1o39</odePageId>
           <odeBlockId>block-1778360151092-fiwm1mu7a</odeBlockId>
           <odeIdeviceId>idevice-1778360151091-3mf0zmsri</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4756,8 +4756,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gr-89cert7vc</odePageId>
-  <odeParentPageId>page-mp09d8gl-zky9yf1y0</odeParentPageId>
+  <odePageId>page-mp4f6jvs-o7xsxqtl8</odePageId>
+  <odeParentPageId>page-mp4f6jvj-j1ugk4gys</odeParentPageId>
   <pageName>REGISTRO DE OBSERVACIÓN</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4792,7 +4792,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gr-89cert7vc</odePageId>
+      <odePageId>page-mp4f6jvs-o7xsxqtl8</odePageId>
       <odeBlockId>block-1778360225594-25kth1cgl</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4821,7 +4821,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gr-89cert7vc</odePageId>
+          <odePageId>page-mp4f6jvs-o7xsxqtl8</odePageId>
           <odeBlockId>block-1778360225594-25kth1cgl</odeBlockId>
           <odeIdeviceId>idevice-1778360225592-iugqdkgdc</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4850,8 +4850,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gs-o9cpsy71l</odePageId>
-  <odeParentPageId></odeParentPageId>
+  <odePageId>page-mp4f6jvu-96pe7qk18</odePageId>
+  <odeParentPageId>page-mp4f6jsr-ux9ojle8m</odeParentPageId>
   <pageName>Atención a la diversidad</pageName>
   <odeNavStructureOrder>7</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4886,7 +4886,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gs-o9cpsy71l</odePageId>
+      <odePageId>page-mp4f6jvu-96pe7qk18</odePageId>
       <odeBlockId>block-1778357185705-gjits51mk</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -4915,7 +4915,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gs-o9cpsy71l</odePageId>
+          <odePageId>page-mp4f6jvu-96pe7qk18</odePageId>
           <odeBlockId>block-1778357185705-gjits51mk</odeBlockId>
           <odeIdeviceId>idevice-1778357185702-eplvm9ud2</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4954,10 +4954,10 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gu-q9dry4v8f</odePageId>
+  <odePageId>page-mp4f6jvx-juu6htefa</odePageId>
   <odeParentPageId></odeParentPageId>
   <pageName>FICHAS DEL PROYECTO</pageName>
-  <odeNavStructureOrder>8</odeNavStructureOrder>
+  <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -4990,7 +4990,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gu-q9dry4v8f</odePageId>
+      <odePageId>page-mp4f6jvx-juu6htefa</odePageId>
       <odeBlockId>block-1778359291068-7jb0eotfa</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -5019,7 +5019,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gu-q9dry4v8f</odePageId>
+          <odePageId>page-mp4f6jvx-juu6htefa</odePageId>
           <odeBlockId>block-1778359291068-7jb0eotfa</odeBlockId>
           <odeIdeviceId>idevice-1778359291064-q01uib4yw</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5050,10 +5050,10 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gw-p6tbal0n7</odePageId>
+  <odePageId>page-mp4f6jvz-y5viad59p</odePageId>
   <odeParentPageId></odeParentPageId>
   <pageName>TAREA FINAL: MURAL COLABORATIVO DE PROYECTO</pageName>
-  <odeNavStructureOrder>9</odeNavStructureOrder>
+  <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -5086,7 +5086,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gw-p6tbal0n7</odePageId>
+      <odePageId>page-mp4f6jvz-y5viad59p</odePageId>
       <odeBlockId>block-1778440393752-4ofcrr9xt</odeBlockId>
       <blockName>EL ACANTILADO DE LAS PALABRAS</blockName>
       <iconName></iconName>
@@ -5115,7 +5115,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gw-p6tbal0n7</odePageId>
+          <odePageId>page-mp4f6jvz-y5viad59p</odePageId>
           <odeBlockId>block-1778440393752-4ofcrr9xt</odeBlockId>
           <odeIdeviceId>idevice-1778440393748-q9sidml5j</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5186,8 +5186,8 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8gy-7e1gc5tz7</odePageId>
-  <odeParentPageId>page-mp09d8gw-p6tbal0n7</odeParentPageId>
+  <odePageId>page-mp4f6jw3-36e1ikxsn</odePageId>
+  <odeParentPageId>page-mp4f6jvz-y5viad59p</odeParentPageId>
   <pageName>MURAL</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5222,7 +5222,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8gy-7e1gc5tz7</odePageId>
+      <odePageId>page-mp4f6jw3-36e1ikxsn</odePageId>
       <odeBlockId>block-1778440970265-xuoot9zjk</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -5251,7 +5251,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8gy-7e1gc5tz7</odePageId>
+          <odePageId>page-mp4f6jw3-36e1ikxsn</odePageId>
           <odeBlockId>block-1778440970265-xuoot9zjk</odeBlockId>
           <odeIdeviceId>idevice-1778440970263-mv08bps6h</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -5288,10 +5288,66 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mp09d8h0-xrghbtocp</odePageId>
+  <odePageId>page-1778698620974-yz68xg9s7</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>EVALUACIÓN  FINAL CONTENIDOS</pageName>
+  <odeNavStructureOrder>4</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>EVALUACIÓN  FINAL CONTENIDOS</value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-1778698620974-yz68xg9s7</odePageId>
+      <odeBlockId>block-1778698674028-kaq6mu7z5</odeBlockId>
+      <blockName>UNE CON LA RESPUESTA CORRECTA</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-1778698620974-yz68xg9s7</odePageId>
+          <odeBlockId>block-1778698674028-kaq6mu7z5</odeBlockId>
+          <odeIdeviceId>idevice-1778698674022-2sjgfa3xd</odeIdeviceId>
+          <odeIdeviceTypeName>relate</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="relaciona-IDevice"><div class="relaciona-instructions gameQP-instructions"><p>Relaciona cada pregunta con su respuesta.</p></div><div class="relaciona-DataGame js-hidden">{"typeGame":"Relaciona","author":"","randomCards":true,"instructions":"<p>Relaciona cada pregunta con su respuesta.</p>","showMinimize":true,"itinerary":{"showClue":false,"clueGame":"","percentageClue":40,"showCodeAccess":false,"codeAccess":"","messageCodeAccess":""},"cardsGame":[{"url":"{{context_path}}/content/resources/angel-gonzalez.jpg","x":0.5693696120689655,"y":0.609307650862069,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"%C3%81NGEL%20GONZ%C3%81LEZ%20ES%20...","urlBk":"{{context_path}}/content/resources/Poeta.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"UN%20POETA"},{"url":"{{context_path}}/content/resources/Sirena.png","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"SIRENAS%20ES...","urlBk":"{{context_path}}/content/resources/Poema.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"UN%20POEMA"},{"url":"{{context_path}}/content/resources/Poema.png","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"EN%20EL%20POEMA%20HAY...","urlBk":"{{context_path}}/content/resources/Delfín.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"DELFINES"},{"url":"{{context_path}}/content/resources/Acantilado.png","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"EN%20UN%20ACANTILADO%20SOLITARIO","urlBk":"{{context_path}}/content/resources/Plenilunio.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"UNA%20NOCHE%20DE%20PLENILUNIO"},{"url":"{{context_path}}/content/resources/Mensaje.png","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"TE%20DEJAR%C3%89%20UN%20MENSAJE","urlBk":"{{context_path}}/content/resources/Caracola.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"EN%20UNA%20CARACOLA"},{"url":"{{context_path}}/content/resources/Velero.png","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"A%20AQUEL%20BARCO%20VELERO...","urlBk":"{{context_path}}/content/resources/Popa.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"HASTA%20LA%20POPA"},{"url":"{{context_path}}/content/resources/Ola.png","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"OLA%2C%20OLA%2COLA%20Y%20ADIOS","urlBk":"{{context_path}}/content/resources/Ola.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"ADIOS%20Y%20OLA%2C%20OLA%2C%20OLA"},{"url":"{{context_path}}/content/resources/Tritón.png","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"LOS%20TRITONES%20VIVEN...","urlBk":"{{context_path}}/content/resources/Mar.png","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"EN%20EL%20MAR"},{"url":"{{context_path}}/content/resources/angel-gonzalez.jpg","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"%C3%81NGEL%20GONZALEZ%20NACE%20EN...","urlBk":"{{context_path}}/content/resources/oviedo.jfif","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"OVIEDO%2C%20ASTURIAS"},{"url":"{{context_path}}/content/resources/angel-gonzalez.jpg","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"%C3%81NGEL%20GONZ%C3%81LEZ%20FUE...","urlBk":"{{context_path}}/content/resources/maestro.avif","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"MAESTRO%20EN%20LE%C3%93N"}],"isScorm":0,"textButtonScorm":"Guardar la puntuación","repeatActivity":true,"weighted":100,"textAfter":"","version":2,"percentajeCards":100,"type":0,"showSolution":true,"timeShowSolution":3,"time":3,"evaluation":false,"evaluationID":"69fab8d4-0898-4bed-a602-a8a09aa3df10","id":"idevice-1778698674022-2sjgfa3xd","msgs":{"msgSubmit":"Enviar","msgClue":"¡Genial! La pista es:","msgCodeAccess":"Código de acceso","msgPlayStart":"Pulsa aquí para jugar","msgScore":"Puntuación","msgErrors":"Errores","msgHits":"Aciertos","msgMinimize":"Minimizar","msgMaximize":"Maximizar","msgFullScreen":"Pantalla Completa","msgExitFullScreen":"Salir del modo pantalla completa","msgNoImage":"Pregunta sin imágenes","msgEndGameScore":"Comience la partida antes de guardar la puntuación.","msgScoreScorm":"La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.","msgOnlySaveScore":"¡Solo puede guardar la puntuación una vez!","msgOnlySave":"Solo puede guardar una vez","msgInformation":"Información","msgYouScore":"Su puntuación","msgAuthor":"Autoría","msgOnlySaveAuto":"Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.","msgSaveAuto":"Su puntuación se guardará automáticamente después de cada pregunta.","msgSeveralScore":"Puede guardar la puntuación tantas veces como quiera","msgYouLastScore":"La última puntuación guardada es","msgActityComply":"Ya ha realizado esta actividad.","msgPlaySeveralTimes":"Puede realizar esta actividad cuantas veces quiera","msgClose":"Cerrar","msgAudio":"Audio","msgNumQuestions":"Número de tarjetas","msgTryAgain":"Necesitas al menos %s% de respuestas correctas para obtener la información. Inténtalo de nuevo.","msgEndGameM":"Has completado el juego. Tu puntuación es %s.","msgUncompletedActivity":"Actividad no completada","msgSuccessfulActivity":"Actividad superada. Puntuación: %s","msgUnsuccessfulActivity":"Actividad no superada. Puntuación: %s","msgTypeGame":"Relaciona","msgCheck":"Comprobar","msgRestart":"Reiniciar"}}</div><div class="game-evaluation-ids js-hidden" data-id="idevice-1778698674022-2sjgfa3xd" data-evaluationb="false" data-evaluationid="69fab8d4-0898-4bed-a602-a8a09aa3df10"></div><a href="{{context_path}}/content/resources/angel-gonzalez.jpg" class="js-hidden relaciona-LinkImages">0</a><a href="{{context_path}}/content/resources/Poeta.png" class="js-hidden relaciona-LinkImagesBack">0</a><a href="{{context_path}}/content/resources/Sirena.png" class="js-hidden relaciona-LinkImages">1</a><a href="{{context_path}}/content/resources/Poema.png" class="js-hidden relaciona-LinkImagesBack">1</a><a href="{{context_path}}/content/resources/Poema.png" class="js-hidden relaciona-LinkImages">2</a><a href="{{context_path}}/content/resources/Delfín.png" class="js-hidden relaciona-LinkImagesBack">2</a><a href="{{context_path}}/content/resources/Acantilado.png" class="js-hidden relaciona-LinkImages">3</a><a href="{{context_path}}/content/resources/Plenilunio.png" class="js-hidden relaciona-LinkImagesBack">3</a><a href="{{context_path}}/content/resources/Mensaje.png" class="js-hidden relaciona-LinkImages">4</a><a href="{{context_path}}/content/resources/Caracola.png" class="js-hidden relaciona-LinkImagesBack">4</a><a href="{{context_path}}/content/resources/Velero.png" class="js-hidden relaciona-LinkImages">5</a><a href="{{context_path}}/content/resources/Popa.png" class="js-hidden relaciona-LinkImagesBack">5</a><a href="{{context_path}}/content/resources/Ola.png" class="js-hidden relaciona-LinkImages">6</a><a href="{{context_path}}/content/resources/Ola.png" class="js-hidden relaciona-LinkImagesBack">6</a><a href="{{context_path}}/content/resources/Tritón.png" class="js-hidden relaciona-LinkImages">7</a><a href="{{context_path}}/content/resources/Mar.png" class="js-hidden relaciona-LinkImagesBack">7</a><a href="{{context_path}}/content/resources/angel-gonzalez.jpg" class="js-hidden relaciona-LinkImages">8</a><a href="{{context_path}}/content/resources/oviedo.jfif" class="js-hidden relaciona-LinkImagesBack">8</a><a href="{{context_path}}/content/resources/angel-gonzalez.jpg" class="js-hidden relaciona-LinkImages">9</a><a href="{{context_path}}/content/resources/maestro.avif" class="js-hidden relaciona-LinkImagesBack">9</a><div class="relaciona-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-mp4f6jw5-1ubddwchy</odePageId>
   <odeParentPageId></odeParentPageId>
   <pageName>Licencia, atribución y descarga del proyecto</pageName>
-  <odeNavStructureOrder>10</odeNavStructureOrder>
+  <odeNavStructureOrder>5</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
@@ -5324,7 +5380,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mp09d8h0-xrghbtocp</odePageId>
+      <odePageId>page-mp4f6jw5-1ubddwchy</odePageId>
       <odeBlockId>block-1778358344582-1bdjfosj6</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -5353,7 +5409,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8h0-xrghbtocp</odePageId>
+          <odePageId>page-mp4f6jw5-1ubddwchy</odePageId>
           <odeBlockId>block-1778358344582-1bdjfosj6</odeBlockId>
           <odeIdeviceId>idevice-1778358344580-4acjix3f4</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5384,7 +5440,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mp09d8h0-xrghbtocp</odePageId>
+      <odePageId>page-mp4f6jw5-1ubddwchy</odePageId>
       <odeBlockId>block-1778358540117-7z920601d</odeBlockId>
       <blockName>Descargar el archivo fuente</blockName>
       <iconName></iconName>
@@ -5413,7 +5469,7 @@ A lo largo del proyecto, el alumnado investigará sobre la vida y obra del autor
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mp09d8h0-xrghbtocp</odePageId>
+          <odePageId>page-mp4f6jw5-1ubddwchy</odePageId>
           <odeBlockId>block-1778358540117-7z920601d</odeBlockId>
           <odeIdeviceId>idevice-1778358540115-n7lie39lz</odeIdeviceId>
           <odeIdeviceTypeName>download-source-file</odeIdeviceTypeName>
